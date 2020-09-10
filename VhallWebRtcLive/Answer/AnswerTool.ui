@@ -1,0 +1,2431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AnswerTool</class>
+ <widget class="QWidget" name="AnswerTool">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>456</width>
+    <height>548</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>456</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>456</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>答题器</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*QWidget#AnswerTool{
+border:1px solid rgb(196, 196, 196);
+}*/
+
+QWidget#AnswerTool{
+	background-color: rgb(211, 211, 211);
+}	</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>1</number>
+   </property>
+   <property name="topMargin">
+    <number>1</number>
+   </property>
+   <property name="rightMargin">
+    <number>1</number>
+   </property>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0" colspan="3">
+    <widget class="QLabel" name="label_top">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/widget/img/widget/back.png) 0 0 194 0;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_left">
+     <property name="minimumSize">
+      <size>
+       <width>15</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>18</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/widget/img/widget/back.png) 6 352 18 0;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>420</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(82, 204, 144);
+</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>24</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <property name="bottomMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 16px &quot;微软雅黑&quot;;
+</string>
+           </property>
+           <property name="text">
+            <string>答题器</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_close">
+           <property name="minimumSize">
+            <size>
+             <width>18</width>
+             <height>18</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>18</width>
+             <height>18</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{	
+	border-image: url(:/Login/img/Login/close_green_Normal.png);
+}
+
+QPushButton:hover{		
+	border-image: url(:/Login/img/Login/close_green_Click.png);
+}
+
+QPushButton:pressed{
+	border-image: url(:/Login/img/Login/close_green_Normal.png);
+}
+
+QPussButton:disable{
+	border-image: url(:/Login/img/Login/close_green_Normal.png);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="CWidget" name="widget_3" native="true">
+        <property name="styleSheet">
+         <string notr="true">#widget_3{
+	background-color: rgb(255, 255, 255);
+	border:0px;
+}</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QStackedWidget" name="stackedWidget">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <widget class="QWidget" name="page_teacher_select">
+            <property name="styleSheet">
+             <string notr="true">QWidget#page_teacher_select{
+background-color: rgb(255, 255, 255);
+}</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>27</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>30</number>
+             </property>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QWidget" name="widget_stuTimerCount" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>360</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>360</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QWidget#widget_stuTimerCount{
+background-color: rgb(255, 247, 233);
+border:1px solid rgba(250,206,116,1);
+}
+</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_2" rowminimumheight="0">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item row="0" column="0">
+                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <item>
+                   <spacer name="horizontalSpacer_15">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_icon">
+                    <property name="minimumSize">
+                     <size>
+                      <width>18</width>
+                      <height>18</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>18</width>
+                      <height>18</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-image:url(:/idention/img/idention/answerRight.png);</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_studentAnswerTimer">
+                    <property name="maximumSize">
+                     <size>
+                      <width>119</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(68, 68, 68);
+font: 9pt &quot;微软雅黑&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>开始答题 00:00:00</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_16">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::MinimumExpanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget_TopSelect" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <property name="spacing">
+                 <number>40</number>
+                </property>
+                <property name="leftMargin">
+                 <number>30</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>30</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <spacer name="horizontalSpacer_23">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_A">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>-1</pointsize>
+                    <weight>50</weight>
+                    <italic>false</italic>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);}
+
+QPushButton:hover{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(82, 204, 144);}</string>
+                  </property>
+                  <property name="text">
+                   <string>A</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_B">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);}
+QPushButton:hover{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(82, 204, 144);}</string>
+                  </property>
+                  <property name="text">
+                   <string>B</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_C">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);}
+QPushButton:hover{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(82, 204, 144);}</string>
+                  </property>
+                  <property name="text">
+                   <string>C</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_D">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);}
+QPushButton:hover{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(82, 204, 144);}</string>
+                  </property>
+                  <property name="text">
+                   <string>D</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_24">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Expanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget_bottomSelect" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <property name="spacing">
+                 <number>40</number>
+                </property>
+                <property name="leftMargin">
+                 <number>30</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>30</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <spacer name="horizontalSpacer_21">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_E">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);}
+QPushButton:hover{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(82, 204, 144);}</string>
+                  </property>
+                  <property name="text">
+                   <string>E</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_F">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);}
+QPushButton:hover{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(82, 204, 144);}</string>
+                  </property>
+                  <property name="text">
+                   <string>F</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_G">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);}
+QPushButton:hover{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(82, 204, 144);}</string>
+                  </property>
+                  <property name="text">
+                   <string>G</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_H">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);}
+QPushButton:hover{
+border-top-left-radius : 30px; 
+border-top-right-radius : 30px; 
+border-bottom-left-radius : 30px; 
+border-bottom-right-radius : 30px; 
+background-color: rgb(244, 244, 244);
+font: 20px &quot;微软雅黑&quot;;
+color: rgb(82, 204, 144);}</string>
+                  </property>
+                  <property name="text">
+                   <string>H</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_22">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Expanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>10</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_selectNotice">
+               <property name="minimumSize">
+                <size>
+                 <width>140</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>140</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(82, 204, 144);
+font: 10pt &quot;微软雅黑&quot;;</string>
+               </property>
+               <property name="text">
+                <string>点击字母预设正确答案</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>15</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget_teacherStartAnswer" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_11">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_3">
+                  <property name="spacing">
+                   <number>17</number>
+                  </property>
+                  <item>
+                   <spacer name="horizontalSpacer_3">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_ADD">
+                    <property name="minimumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#pushButton_ADD{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+border-image:url(:/button/img/button/AnswerAdd.png);
+font: 14pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}
+
+
+QPushButton#pushButton_ADD:hover{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+border-image:url(:/button/img/button/AnswerAdd_hover.png);
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QPushButton" name="pushButton_start">
+                    <property name="minimumSize">
+                     <size>
+                      <width>100</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>100</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#pushButton_start{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+background-color: rgb(82, 204, 144);
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}
+
+
+QPushButton#pushButton_start:hover{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+background-color: rgb(99,224,162);
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>开始答题</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_DEL">
+                    <property name="minimumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#pushButton_DEL{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+border-image:url(:/button/img/button/Answer_minus.png);
+font: 16pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}
+
+
+QPushButton#pushButton_DEL:hover{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+border-image:url(:/button/img/button/Answer_minus_hover.png);
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_4">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget_stuCommitAnswer" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                <property name="spacing">
+                 <number>10</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <spacer name="horizontalSpacer_9">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_studentCommit">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton#pushButton_studentCommit{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+background-color: rgb(82, 204, 144);
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}
+
+QPushButton#pushButton_studentCommit:hover{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+background-color: rgb(99,224,162);
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>提交答案</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="widget_message" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>360</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_17">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_18">
+                     <item>
+                      <widget class="QLabel" name="label_teacherCommitNotice">
+                       <property name="minimumSize">
+                        <size>
+                         <width>51</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>51</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(68, 68, 68);
+font: 9pt &quot;微软雅黑&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string>正确答案:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_teacherCommitAnswer">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(85, 170, 127);
+font: 12pt &quot;微软雅黑&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_stuCommitNotice">
+                       <property name="minimumSize">
+                        <size>
+                         <width>51</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>51</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(68, 68, 68);
+font: 9pt &quot;微软雅黑&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string>您的答案:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_19">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_stu_commit_answer">
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(85, 170, 127);
+font: 12pt &quot;微软雅黑&quot;;</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_omit">
+                         <property name="minimumSize">
+                          <size>
+                           <width>28</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>28</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(252,86,89);
+font: 12pt &quot;微软雅黑&quot;;</string>
+                         </property>
+                         <property name="text">
+                          <string>、...</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_10">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget_stuAnswerShow" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_15">
+                <property name="spacing">
+                 <number>10</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page_teacher_pushAnswer">
+            <property name="styleSheet">
+             <string notr="true">QWidget#page_teacher_pushAnswer{
+background-color: rgb(255, 255, 255);
+}</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>20</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <spacer name="verticalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>10</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>30</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_4" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QWidget#widget_4{
+background-color: rgb(255, 247, 233);
+border:1px solid rgba(250,206,116,1);
+}
+</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_3">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="6">
+                   <spacer name="horizontalSpacer_8">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="0" column="0">
+                   <spacer name="horizontalSpacer_7">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="0" column="4">
+                   <widget class="QLabel" name="label_8">
+                    <property name="minimumSize">
+                     <size>
+                      <width>2</width>
+                      <height>15</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>2</width>
+                      <height>15</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(199, 199, 199);</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLabel" name="label_7">
+                    <property name="minimumSize">
+                     <size>
+                      <width>2</width>
+                      <height>15</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>2</width>
+                      <height>15</height>
+                     </size>
+                    </property>
+                    <property name="focusPolicy">
+                     <enum>Qt::NoFocus</enum>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(199, 199, 199);</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="label_online">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(68, 68, 68);
+font: 10pt &quot;微软雅黑&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>当前在线人数</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="5">
+                   <widget class="QLabel" name="label_startTimeCount">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(68, 68, 68);
+font: 10pt &quot;微软雅黑&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>已开始 00:00</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QLabel" name="label_submit">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(68, 68, 68);
+font: 10pt &quot;微软雅黑&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>已回答人数</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_9">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>30</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QStackedWidget" name="stackedWidget_stulist">
+               <property name="currentIndex">
+                <number>1</number>
+               </property>
+               <widget class="QWidget" name="page">
+                <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="0">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>2</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QListWidget" name="listWidget_answerStat">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>240</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>240</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <stylestrategy>PreferAntialias</stylestrategy>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QListWidget#listWidget_answerStat{
+border:0px solid #C4C4C4;
+}
+
+
+/*QScrollBar:vertical { 
+	background-color: rgb(221, 221, 221);
+    width: 9px;
+    margin: 0px 0 0px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: rgb(195, 195, 195);
+    min-height: 20px;
+    margin: 0 1px 0 2px;
+    border-radius: 3px;
+    border: none;
+}*/
+ 
+QScrollBar::add-line:vertical {
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+ 
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+ 
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    border: 1px solid grey;
+    width: 0px;
+    height: 0px;
+    background: white;
+}
+ 
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+/*滚动条样式 开始*/
+QScrollBar:vertical
+{
+border-radius:4px;
+width:6px;
+background:rgba(255,255,255, 255);
+margin:0px,2px,0px,0px;
+overflow-x:hidden;
+}
+
+QScrollBar::handle:vertical
+{
+background:rgba(210,210,210, 255);
+border-radius:3px;
+min-height:20;
+border: 1px solid #D2D2D2;
+}</string>
+                   </property>
+                   <property name="editTriggers">
+                    <set>QAbstractItemView::NoEditTriggers</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="page_list">
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>20</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_13">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_3">
+                     <property name="minimumSize">
+                      <size>
+                       <width>30</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>30</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="widget_5" native="true">
+                     <property name="layoutDirection">
+                      <enum>Qt::LeftToRight</enum>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QWidget#widget_5{
+border-bottom:1px solid #C1D8CD;
+	background-color: rgb(238, 250, 244);
+}</string>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_16">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item>
+                       <spacer name="horizontalSpacer_25">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                         <enum>QSizePolicy::Fixed</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>30</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_name">
+                        <property name="minimumSize">
+                         <size>
+                          <width>120</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(68, 68, 68);
+font: 10pt &quot;微软雅黑&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;学员昵称&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_answer">
+                        <property name="minimumSize">
+                         <size>
+                          <width>74</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(68, 68, 68);
+font: 10pt &quot;微软雅黑&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;答案&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_time">
+                        <property name="minimumSize">
+                         <size>
+                          <width>80</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(68, 68, 68);
+font: 10pt &quot;微软雅黑&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;答题用时&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_isright">
+                        <property name="minimumSize">
+                         <size>
+                          <width>55</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>70</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(68, 68, 68);
+font: 10pt &quot;微软雅黑&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;是否正确&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_29">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                         <enum>QSizePolicy::Fixed</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>30</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_4">
+                     <property name="minimumSize">
+                      <size>
+                       <width>30</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>30</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QListWidget" name="listWidget_stulist">
+                   <property name="styleSheet">
+                    <string notr="true">QListWidget#listWidget_stulist{
+border:0px solid #C4C4C4;
+	background-color: rgb(255, 255, 255);
+}
+
+
+/*QScrollBar:vertical { 
+	background-color: rgb(221, 221, 221);
+    width: 9px;
+    margin: 0px 0 0px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: rgb(195, 195, 195);
+    min-height: 20px;
+    margin: 0 1px 0 2px;
+    border-radius: 3px;
+    border: none;
+}*/
+ 
+QScrollBar::add-line:vertical {
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+ 
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+ 
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    border: 1px solid grey;
+    width: 0px;
+    height: 0px;
+    background: white;
+}
+ 
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+/*滚动条样式 开始*/
+QScrollBar:vertical
+{
+border-radius:4px;
+width:6px;
+background:rgba(255,255,255, 255);
+margin:0px,0px,0px,0px;
+overflow-x:hidden;
+}
+
+QScrollBar::handle:vertical
+{
+background:rgba(210,210,210, 255);
+border-radius:3px;
+min-height:20;
+border: 1px solid #D2D2D2;
+}</string>
+                   </property>
+                   <property name="editTriggers">
+                    <set>QAbstractItemView::NoEditTriggers</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget_right" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_6">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_right">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <item>
+                   <spacer name="horizontalSpacer_5">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_rightanswer">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(68, 68, 68);
+font: 75 14px &quot;微软雅黑&quot;;
+color:rgba(68,68,68,1);</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;正确答案为：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_answer_num">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(85, 170, 127);
+font: 75 14px &quot;微软雅黑&quot;;
+font-weight:500;
+line-height:20px;</string>
+                    </property>
+                    <property name="text">
+                     <string>A</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_6">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>10</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget_stuPerCount" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_14">
+                <item>
+                 <spacer name="horizontalSpacer_11">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item alignment="Qt::AlignRight">
+                 <widget class="QLabel" name="label_17">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(68, 68, 68);
+font: 75 14px &quot;微软雅黑&quot;;
+color:rgba(68,68,68,1);</string>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;答对:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_right_count">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(85, 170, 127);
+
+
+font: 75 14px &quot;微软雅黑&quot;;
+font-weight:500;
+line-height:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;0人&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_13">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>10</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_15">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(68, 68, 68);
+font-weight:500;
+color:rgba(68,68,68,1);
+font: 75 14px &quot;微软雅黑&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;答错:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_err_count">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(254,99,106);
+font: 75 14px &quot;微软雅黑&quot;;
+font-weight:500;
+line-height:20px;
+
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;0人&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_14">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>10</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_10">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(68, 68, 68);
+font-weight:500;
+color:rgba(68,68,68,1);
+font: 75 14px &quot;微软雅黑&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;正确率:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_accuracy">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(68, 68, 68);
+font-weight:700;
+color:rgba(68,68,68,1);
+font: 75 14px &quot;微软雅黑&quot;;
+font-weight:600;
+</string>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;30%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_12">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <property name="spacing">
+                <number>10</number>
+               </property>
+               <item>
+                <spacer name="horizontalSpacer_19">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_restartanswer">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#pushButton_restartanswer{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+background-color: rgb(82, 204, 144);
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}
+
+
+QPushButton#pushButton_restartanswer:hover{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+background-color: rgb(99,224,162);
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>重新发起</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_teacherCommitAllAnswer">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#pushButton_teacherCommitAllAnswer{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+background-color: rgb(82, 204, 144);
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}
+
+
+QPushButton#pushButton_teacherCommitAllAnswer:hover{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+background-color: rgb(99,224,162);
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>公布答案</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_over">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#pushButton_over{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+border:1px solid #C4C4C4;
+background-color: rgb(255, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(68, 68, 68);
+}
+
+
+QPushButton#pushButton_over:hover{
+border-top-left-radius : 15px; 
+border-top-right-radius : 15px; 
+border-bottom-left-radius : 15px; 
+border-bottom-right-radius : 15px; 
+border:1px solid #C4C4C4;
+background-color: rgb(220, 220, 220);
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(68, 68, 68);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>结束答题</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_20">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>30</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QLabel" name="label_bottom">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>22</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>22</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/widget/img/widget/back.png) 182 0 0 0;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLabel" name="label_right">
+     <property name="minimumSize">
+      <size>
+       <width>15</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>15</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/widget/img/widget/back.png) 10 0 18 352;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CWidget</class>
+   <extends>QWidget</extends>
+   <header>cwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../VLive/VLive.qrc"/>
+ </resources>
+ <connections/>
+</ui>
