@@ -1,21 +1,22 @@
-#ifndef BaiduPaperDlg_H
-#define BaiduPaperDlg_H
+#ifndef CHOOSETESTPAPERDLG_H
+#define CHOOSETESTPAPERDLG_H
 
-#include <QDialog> 
+
 #include <QTimer>
 
-#include "ui_BaiduPaperDlg.h"
+#include "ui_ChooseTestPaperDlg.h"
 #include "../Unility/Unility.h"
 #include "LibCefViewWdg.h"
-//class LibCefViewWdg;
 
-class BaiduPaperDlg : public CBaseWnd,public MsgCallbackDelegate
+class ShadowBoxDlg;
+
+class ChooseTestPaperDlg : public CBaseWnd,public MsgCallbackDelegate
 {
     Q_OBJECT
 
 public:
-    explicit BaiduPaperDlg(QWidget *parent = 0);
-    ~BaiduPaperDlg();
+    explicit ChooseTestPaperDlg(QWidget *parent = 0);
+    ~ChooseTestPaperDlg();
 	CREATE_WND();
 	virtual void Notice(const CSTDMapParam &);
 
@@ -34,6 +35,7 @@ protected:
 	void customEvent(QEvent* event);
 	void resizeEvent(QResizeEvent *event);
 	void showEvent(QShowEvent *event);
+   void mouseMoveEvent(QMouseEvent *);
 private slots:
 	void slot_TitleChanged(const QString& strTitle);
 	void slot_LoadTest();
@@ -45,23 +47,15 @@ private:
 	void moveXY();
 
 
-	Ui::BaiduPaperDlg ui;
+	Ui::ChooseTestPaperDlg ui;
 	bool mbIsMaxSize = false;
 
    QString m_TestUrl = "http://e.vhall.com/";
    LibCefViewWdg *mCefTestView = nullptr;
 
-	//QRect mNormalRect;
-	//QList<CListViewItemWdg*> mListItem ;
-	//int miCurrentPage = 1;
-	//int miReqPage = 1;
-	////QMap<QString, RoomListInfo> mMapRoomInfoList;
-
-	//bool mbGust = false;
-	//int miLiveStatus = -1;
-
    QTimer* mpTimer = nullptr;
    bool mbLoadEnd = false;
+   //ShadowBoxDlg* mpShaowBoxDlg = nullptr;
 };
 
-#endif // BaiduPaperDlg_H
+#endif // CHOOSETESTPAPERDLG_H
