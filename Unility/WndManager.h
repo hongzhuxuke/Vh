@@ -29,8 +29,8 @@
 #define     WND_ID_WEBRTC_MAIN          "WND_ID_WEBRTC_MAIN"
 #define     WND_ID_WEBRTC_COTROL        "WND_ID_WEBRTC_COTROL"
 #define     WND_ID_WEBRTC_SETTING       "WND_ID_WEBRTC_SETTING"
-#define     WND_ID_INVITE_TO_SPEAK      "WND_ID_INVITE_TO_SPEAK" //é‚€è¯·ä¸Šéº¦çª—å£
-#define     WND_ID_ASK_FOR_SPEAK        "WND_ID_ASK_FOR_SPEAK"    //ç”³è¯·ä¸Šéº¦çª—å£
+#define     WND_ID_INVITE_TO_SPEAK      "WND_ID_INVITE_TO_SPEAK" //ÑûÇëÉÏÂó´°¿Ú
+#define     WND_ID_ASK_FOR_SPEAK        "WND_ID_ASK_FOR_SPEAK"    //ÉêÇëÉÏÂó´°¿Ú
 #define     WND_ID_MAINUI               "WND_ID_MAINUI"
 
 //#define     WND_ID_FLOAT_RENDER         "WND_ID_FLOAT_RENDER"
@@ -68,10 +68,10 @@
 
 #define START_WEB_RTC_LIVE      "StartWebRtcLive"
 #define DEV_TEST "DevTest"
-/*TEACHER_VIEW æµ®çª—ã€å…¨å±æ—¶å€™  åˆ¤æ–­æœ¬åœ°è§†é¢‘å›žæ˜¾ä½ç½®   åœ¨å¤§ç”»é¢/å°ç”»é¢
-	1.ã€å…¬å¼€è¯¾-å­¦å‘˜ã€‘ æœ¬åœ°è§†é¢‘å›žæ˜¾åœ¨ç”»ä¸­ç”»çš„å°ç”»é¢ï¼Œ
-	2.ã€å…¬å¼€è¯¾-è®²å¸ˆã€‘å›žæ˜¾åœ¨å¤§ç”»é¢
-	3.ã€å°è¯¾å ‚ã€‘ åªæœ‰ä¸€ä¸ªç”»é¢*/
+/*TEACHER_VIEW ¸¡´°¡¢È«ÆÁÊ±ºò  ÅÐ¶Ï±¾µØÊÓÆµ»ØÏÔÎ»ÖÃ   ÔÚ´ó»­Ãæ/Ð¡»­Ãæ
+	1.¡¾¹«¿ª¿Î-Ñ§Ô±¡¿ ±¾µØÊÓÆµ»ØÏÔÔÚ»­ÖÐ»­µÄÐ¡»­Ãæ£¬
+	2.¡¾¹«¿ª¿Î-½²Ê¦¡¿»ØÏÔÔÚ´ó»­Ãæ
+	3.¡¾Ð¡¿ÎÌÃ¡¿ Ö»ÓÐÒ»¸ö»­Ãæ*/
 #define TEACHER_VIEW            "TEACHER_VIEW"
 #define TipsMsg                 "TipsMsg"
 #define WEBRTC_ROOM_HOST        "WEBRTC_ROOM_HOST"
