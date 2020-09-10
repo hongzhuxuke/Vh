@@ -84,7 +84,7 @@ protected:
 private slots:
 	void ChoiceFiles(const QStringList &selected);
 	
-	//æ’­æ”¾è¿›åº¦æ”¹å˜
+	//²¥·Å½ø¶È¸Ä±ä
 	void OnProgressChanged(int);
 	void OnCyclePlay();
 	void on_ChkBoxMuteSelf_toggled(bool checked);
@@ -132,7 +132,7 @@ private:
 
    bool m_bIsMute;
    bool m_bPlayCurrentFile = false;
-   //å¾ªç¯æ’­æ”¾å®šæ—¶å™¨
+   //Ñ­»·²¥·Å¶¨Ê±Æ÷
    QTimer m_qCycleTimer;
    unsigned int m_iVolume;
 
@@ -170,9 +170,9 @@ public:
 	void SetPlayState(int iState);
 
 	enum ePlayState {
-		ePlayState_Unplay, //æœªæ’­æ”¾
-		ePlayState_Playing, //æ’­æ”¾ä¸­
-		ePlayState_suspend //æš‚åœ
+		ePlayState_Unplay, //Î´²¥·Å
+		ePlayState_Playing, //²¥·ÅÖĞ
+		ePlayState_suspend //ÔİÍ£
 	};
 protected:
 	//virtual void paintEvent(QPaintEvent *);
@@ -194,7 +194,7 @@ private:
 
 	bool m_bDrawLine = false;
 	bool m_bChecked = false;
-	int miPlayState = ePlayState_Unplay;  //æ’­æ”¾çŠ¶æ€
+	int miPlayState = ePlayState_Unplay;  //²¥·Å×´Ì¬
   
 };
 
