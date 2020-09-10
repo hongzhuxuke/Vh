@@ -1,0 +1,66 @@
+/*用户列表*/
+#onLineListWdt,#raiseHandsListWdt,#restrictedlistWdt
+{
+	background-color: rgb(64, 66, 72);
+	border: 0px;
+	border-width:50px 5px 20px 5px;
+}
+
+#onLineListWdt::item,#raiseHandsListWdt::item,#restrictedlistWdt::item
+{
+	background-color: rgb(64, 66, 72);
+	color: rgb(64, 66, 72);
+}
+
+#onLineListWdt::item:focus,#raiseHandsListWdt::item:focus,#restrictedlistWdt::item:focus
+{
+	background-color: rgb(52, 54, 58);
+	color: rgb(52, 54, 58);
+}
+
+#onLineListWdt::item:hover,#raiseHandsListWdt::item:hover,#restrictedlistWdt::item:hover{
+	background-color: rgb(52, 54, 58);
+	color: rgb(52, 54, 58);
+}
+
+/*聊天、成员、公告   */
+
+Tabwidget QTabWidget::pane{ 
+ font: 75 14px "微软雅黑";
+	border-top:2px solid #404248;
+}
+
+QTabBar::tab{
+min-width:106px;
+min-height:35px;
+max-width:106px;
+font: 75 14px "微软雅黑";
+font-weight:bold;
+color:rgb(141, 142, 143);
+border:0px;
+background-color:rgb(52, 54, 58);
+}
+
+QTabBar::tab:selected,QTabBar::tab:hover{
+	color:rgb(82, 204, 144);
+	background-color:rgb(64, 66, 72);
+	border-bottom-color:#52CC90;
+	border-bottom-width: 2px;
+	border-style:solid;
+}
+
+QTabBar{
+	background-color: rgb(52, 54, 58);
+}
+
+QTabWidget{
+font: 75 14px "微软雅黑";
+	background-color: rgb(52, 54, 58);
+	border:0px solid #ff0000;
+	padding:0px;
+	margin:0px;
+}
+
+CMemberListWdg{
+	background-color: rgb(52, 54, 58);
+}
