@@ -18,11 +18,11 @@ public:
 
    enum eStateType
    {
-      eStateType_FrameGeting = 0,//ç”»é¢è·å–
-      eStateType_DesktopSharing, //æ¡Œé¢å…±äº«ä¸­
-      eStateType_ReleasWheat,     //åŒæ¨å­¦å‘˜ä¸‹éº¦
-		eStateType_ReleasVrtc,     //æ¡Œé¢å…±äº«å­¦å‘˜ä¸‹éº¦
-      eStateType_OverTime,             //è·å–è¶…æ—¶
+      eStateType_FrameGeting = 0,//»­Ãæ»ñÈ¡
+      eStateType_DesktopSharing, //×ÀÃæ¹²ÏíÖĞ
+      eStateType_ReleasWheat,     //Ë«ÍÆÑ§Ô±ÏÂÂó
+		eStateType_ReleasVrtc,     //×ÀÃæ¹²ÏíÑ§Ô±ÏÂÂó
+      eStateType_OverTime,             //»ñÈ¡³¬Ê±
       eStateType_Null
    };
 
