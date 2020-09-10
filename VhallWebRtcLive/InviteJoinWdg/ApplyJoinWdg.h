@@ -1,23 +1,24 @@
-#ifndef INVITEJOINWIDGET_H
-#define INVITEJOINWIDGET_H
+#ifndef APPLYJOINWIDGET_H
+#define APPLYJOINWIDGET_H
 
 #include <QDialog>
 #include <QPaintEvent>
 #include <QPixmap>
 #include <QTimer>
 
-#include "ui_InviteJoinWidget.h"
+#include "ui_ApplyJoinWdg.h"
 #include "title_button.h"
 #include "../Unility/Unility.h"
 
 
-class InviteJoinWidget : public CBaseWnd
+class ApplyJoinWdg : public CBaseWnd
 {
    Q_OBJECT
 
 public:
-   InviteJoinWidget(QWidget *parent = 0);
-   ~InviteJoinWidget();
+   ApplyJoinWdg(QWidget *parent = 0);
+   ~ApplyJoinWdg();
+
 
    virtual void Notice(const CSTDMapParam &);
    virtual void Notice(const CSTDMapParamPtr &);
@@ -29,19 +30,19 @@ public:
    QString GetUid();
    void SetUid(const QString& strUid);
 private slots:
-   void Slot_GuestAgreeHostInvite(); 
-   void Slot_GuestRefuseHostInvite();
+   void Slot_HostAgreeApply();
+   void Slot_HostRefuseApply();
    void Slot_ShowTimeOut();
 
 signals:
-   void Sig_GuestAgreeHostInvite();
-   void Sig_GuestRefuseHostInvite();
+   void Sig_HostAgreeApply();
+   void Sig_HostRefuseApply();
 protected:
    void paintEvent(QPaintEvent *);
    bool eventFilter(QObject *o, QEvent *e);
    void showEvent(QShowEvent *);
 private:
-   Ui::InviteJoinWidget ui;
+   Ui::ApplyJoinWdg ui;
    QPixmap mpixmap;
    TitleButton *m_pCloseBtn =  NULL;
    QPoint pressPoint;
@@ -54,4 +55,4 @@ private:
 	QString mStrUid = "";
 };
 
-#endif // INVITEJOINWIDGET_H
+#endif // APPLYJOINWIDGET_H
