@@ -158,7 +158,7 @@ begin
       Result := true;
     end;
     
-  if RegQueryStringValue(HKLM, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\微吼课堂_is1', 'UninstallString', ResultStr) then
+  if RegQueryStringValue(HKLM, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\΢�����_is1', 'UninstallString', ResultStr) then
     begin
     ResultStr := RemoveQuotes(ResultStr);
     Exec(ResultStr, '/silent', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
@@ -166,7 +166,7 @@ begin
     result := true;
 end;
 
-procedure btn_setupclick(hBtn:HWND);//立即安装 按钮点击事件
+procedure btn_setupclick(hBtn:HWND);//������װ ��ť����¼�
 var
   ResultStr: String;
   ResultCode: Integer;
@@ -183,29 +183,29 @@ Name: "en"; MessagesFile: "compiler:Languages\English.isl"
 Name: "chinese_trad"; MessagesFile: "compiler:Languages\ChineseTrad.isl"
 
 [CustomMessages]
-chs.vname=微吼课堂
+chs.vname=΢�����
 en.regist=Register
 en.registerInfo=if using all function please register Vhall class accounts.
 en.exitVhall=Please Exit Vhall class then press Install  Button.
-chs.regist=免费注册
+chs.regist=���ע��
 chs.registerInfo=.
 
 en.MyGroupName=Vhall Class Streaming
-chs.MyGroupName=微吼课堂
+chs.MyGroupName=΢�����
                                  
 en.vname=VhallClass
-chs.exitVhall=请先退出微吼课堂再进行安装.
+chs.exitVhall=�����˳�΢������ٽ��а�װ.
 
 en.wrongOS=Please use the operating system which is Windows 7 or higher version! The setup program will exit!
-chs.wrongOS=请使用WIN7及以上的操作系统！无法运行程序，本安装程序即将退出！
+chs.wrongOS=��ʹ��WIN7�����ϵĲ���ϵͳ���޷����г��򣬱���װ���򼴽��˳���
 en.detectNoDX=Your machine don't have the necessary DirectX components! Will you install it right now?
-chs.detectNoDX=系统检测到您没有安装必需的DirectX组件，是否立刻安装？
+chs.detectNoDX=ϵͳ��⵽��û�а�װ�����DirectX������Ƿ����̰�װ��
 en.DXWarning=DirectX is not installed. Vhall Live Streaming may not be able to run normally!
-chs.DXWarning=没有安装DirectX组件，微吼课堂可能无法正常使用！
+chs.DXWarning=û�а�װDirectX�����΢����ÿ����޷�����ʹ�ã�
 
 [Messages]
 en.BeveledLabel=Life is not dress rehearsal, living every day!
-chs.BeveledLabel=人生没有彩排，每天都是现场直播！
+chs.BeveledLabel=����û�в��ţ�ÿ�춼���ֳ�ֱ����
 
 [Tasks]
 ;Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}";
@@ -266,9 +266,9 @@ Source: "..\x64\Release\pepflash\x64\*.*"; DestDir: "{app}\pepflash\x64"; Flags:
 ;Name: "{group}\{cm:vname}"; Filename: "{app}\vbp.exe"; Parameters: "-m console"
 ;Name: "{group}\uninstall {cm:vname}"; Filename: "{app}\vbp.exe";Parameters: "-m service -u uninstall"
 
-Name: "{group}\微吼课堂"; Filename: "{app}\VhallClassRoom.exe"; IconFilename:"{app}\VhallClassRoom.ico"
-Name: "{group}\{cm:UninstallProgram,微吼课堂}"; Filename: "{uninstallexe}"
-Name: "{commondesktop}\微吼课堂"; Filename: "{app}\VhallClassRoom.exe"; IconFilename:"{app}\VhallClassRoom.ico"
+Name: "{group}\΢�����"; Filename: "{app}\VhallClassRoom.exe"; IconFilename:"{app}\VhallClassRoom.ico"
+Name: "{group}\{cm:UninstallProgram,΢�����}"; Filename: "{uninstallexe}"
+Name: "{commondesktop}\΢�����"; Filename: "{app}\VhallClassRoom.exe"; IconFilename:"{app}\VhallClassRoom.ico"
 
 [Registry]
 ;delete vpb bootstart
