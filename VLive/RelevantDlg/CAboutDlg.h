@@ -83,18 +83,18 @@ private:
 
 	QMutex      mCheckMutex;
 	bool        mIsChecked;
-	bool mIsForceUpdata = false;//å¼ºåˆ¶æ›´æ–°
+	bool mIsForceUpdata = false;//Ç¿ÖÆ¸üĞÂ
 
 	string  mNewVersion;
-	QString mDownloadLink; //ä¸‹è½½é“¾æ¥
+	QString mDownloadLink; //ÏÂÔØÁ´½Ó
 	//QString mDownloadTips;
 	wstring mCurrVersionW;
 
 	QString mDownloadFilePath;
 	QFileInfo fileInfo;
 	QFile *mFile = nullptr;
-	//VHProcessBar *mProcessBar = NULL;//æ›´æ–°è¿›åº¦å¯¹è¯æ¡†
-	//ä¸‹è½½å®Œ å®‰è£…å‘½ä»¤è°ƒç”¨ å‚ç…§
+	//VHProcessBar *mProcessBar = NULL;//¸üĞÂ½ø¶È¶Ô»°¿ò
+	//ÏÂÔØÍê °²×°ÃüÁîµ÷ÓÃ ²ÎÕÕ
 	//RuntimeInstance.cpp   990
 
 	QPoint pressPoint;
