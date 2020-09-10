@@ -13,7 +13,7 @@ class QListWidgetItem;
 class MenuWdg;
 //class CAction;
 class WebRtcLiveWdg;
-/*åœ¨çº¿åˆ—è¡¨æˆå‘˜é¡¹*/
+/*ÔÚÏßÁĞ±í³ÉÔ±Ïî*/
 class COnlineItemWdg : public CWidget
 {
 	Q_OBJECT
@@ -69,31 +69,31 @@ public:
 		eOptype_CancleKickOut
 	};
 
-	//å—é™åˆ¶çŠ¶æ€
+	//ÊÜÏŞÖÆ×´Ì¬
 	enum eForbiddenState
 	{
-		eForbiddenState_normal,		//æ­£å¸¸çŠ¶æ€
-		eForbiddenState_Forbidden,   //ç¦è¨€
+		eForbiddenState_normal,		//Õı³£×´Ì¬
+		eForbiddenState_Forbidden,   //½ûÑÔ
 	};
 
 	enum eKickOutState
 	{
-		eKickOutState_normal,		//æ­£å¸¸çŠ¶æ€
-		eKickOutState_KickOut,      //è¸¢å‡º
+		eKickOutState_normal,		//Õı³£×´Ì¬
+		eKickOutState_KickOut,      //Ìß³ö
 	};
 
-	//ä¸¾æ‰‹çŠ¶æ€
+	//¾ÙÊÖ×´Ì¬
 	enum eRaiseHandsState
 	{
-		eRaiseHandsState_normal = -1,		//æ­£å¸¸çŠ¶æ€
-		eRaiseHandsState_RaiseHands = 0,   //ä¸¾æ‰‹ä¸­
-		eRaiseHandsState_Speaking = 1,      //è¿éº¦ä¸­
+		eRaiseHandsState_normal = -1,		//Õı³£×´Ì¬
+		eRaiseHandsState_RaiseHands = 0,   //¾ÙÊÖÖĞ
+		eRaiseHandsState_Speaking = 1,      //Á¬ÂóÖĞ
 	};
 
     //enum eUserState {
-    //    eUserState_OnLine = 0,    //åœ¨çº¿ç”¨æˆ·
-    //    eUserState_KickOut = 1,   //è¸¢å‡ºç”¨æˆ·
-    //    eUserState_ChatForbid = 2,  //ç¦è¨€ç”¨æˆ·
+    //    eUserState_OnLine = 0,    //ÔÚÏßÓÃ»§
+    //    eUserState_KickOut = 1,   //Ìß³öÓÃ»§
+    //    eUserState_ChatForbid = 2,  //½ûÑÔÓÃ»§
     //};
 signals:
 	//void sig_UserSpeaking(bool);
@@ -131,22 +131,22 @@ private:
 	QTimer* mpUpperTime = NULL;
 	QListWidgetItem* mpItem = NULL;
 
-	//int miCurLimitedState;//æ›´å¤šæŒ‰é’®æ˜¾ç¤ºçŠ¶æ€
+	//int miCurLimitedState;//¸ü¶à°´Å¥ÏÔÊ¾×´Ì¬
 
 
-	int miRaiseHandsState = -1; //ä¸Šéº¦/ä¸‹éº¦/é‚€è¯·ä¸Šéº¦ çŠ¶æ€æ ‡è¯†
+	int miRaiseHandsState = -1; //ÉÏÂó/ÏÂÂó/ÑûÇëÉÏÂó ×´Ì¬±êÊ¶
 
 	QString mStrId;
 	int miRole;
-	int mINoMic = 0; //æ˜¯å¦å…·æœ‰ä¸Šéº¦èƒ½åŠ›  0 æœ‰èƒ½åŠ›ï¼ˆæœ‰micæˆ–è€…æ‘„åƒå¤´ç­‰ï¼‰ã€‚ 1 æ— èƒ½åŠ›ï¼ˆæ²¡æœ‰micç­‰è®¾å¤‡ï¼‰
+	int mINoMic = 0; //ÊÇ·ñ¾ßÓĞÉÏÂóÄÜÁ¦  0 ÓĞÄÜÁ¦£¨ÓĞmic»òÕßÉãÏñÍ·µÈ£©¡£ 1 ÎŞÄÜÁ¦£¨Ã»ÓĞmicµÈÉè±¸£©
 	
-	bool mbForbiddenState = false;//ç¦è¨€çŠ¶æ€
-	bool mbKickOutState = false;//è¸¢å‡ºçŠ¶æ€
+	bool mbForbiddenState = false;//½ûÑÔ×´Ì¬
+	bool mbKickOutState = false;//Ìß³ö×´Ì¬
 
-	int mOnlineStatus = 1;            // åœ¨çº¿çŠ¶æ€ï¼Œé»˜è®¤ä¸º0ä¸åœ¨çº¿ï¼Œ1ä¸ºåœ¨çº¿
+	int mOnlineStatus = 1;            // ÔÚÏß×´Ì¬£¬Ä¬ÈÏÎª0²»ÔÚÏß£¬1ÎªÔÚÏß
 	//Menu* mPMoreOpMenu = nullptr;
 	MenuWdg* mPMoreOpMenu = nullptr;
-    //bool mbIsInviting = false;//é‚€è¯·ä¸Šéº¦/è¿éº¦ä¸­  true
+    //bool mbIsInviting = false;//ÑûÇëÉÏÂó/Á¬ÂóÖĞ  true
 
 };
 
