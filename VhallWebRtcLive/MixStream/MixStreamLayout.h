@@ -15,7 +15,7 @@ public:
     MixStreamLayout();
     ~MixStreamLayout();
 
-   // changeMixedProfile琛ㄧず妗岄潰鍏变韩鏃讹紝鏃佽矾娣锋祦鏀规垚1080P
+   // changeMixedProfile表示桌面共享时，旁路混流改成1080P
     void SetMixStreamLayout(bool startClass = false, int layout = -1, bool hasDesktopStream = false);
     void SetMainViewStream(QString streamId);
 
@@ -37,8 +37,8 @@ public:
 
     //enum eUiSetLayoutMode
     //{
-    //   eUiSetLayoutMode_TILED = 0, //涓绘骞抽摵
-    //   eUiSetLayoutMode_GRID,          //鍧囧寑鍒嗗竷
+    //   eUiSetLayoutMode_TILED = 0, //主次平铺
+    //   eUiSetLayoutMode_GRID,          //均匀分布
     //};
 
     void SetRetLiveWdg(WebRtcLiveWdg* pWebRtcLiveWdg);
