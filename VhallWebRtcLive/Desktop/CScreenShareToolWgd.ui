@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CScreenShareToolWgd</class>
+ <widget class="QWidget" name="CScreenShareToolWgd">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>801</width>
+    <height>77</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>10000</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>CScreenShareToolWgd</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>28</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_left">
+         <property name="minimumSize">
+          <size>
+           <width>4</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>4</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0,0,0,153);
+border 1px solid;
+border-bottom-left-radius:4px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widgetFlag" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#widgetFlag{
+background-color: rgba(0,0,0,153);
+color: rgb(255, 255, 255);
+
+border 1px solid; 
+}
+</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_flag">
+            <property name="minimumSize">
+             <size>
+              <width>18</width>
+              <height>18</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>18</width>
+              <height>18</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_flag{
+border-image: url(:/button/img/button/netState_difference.png);
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="title" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>159</width>
+           <height>43</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>159</width>
+           <height>43</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#title
+{
+background-color:rgb(0,0,0,153);
+font: 16px &quot;微软雅黑&quot;;
+border 1px solid; 
+}</string>
+         </property>
+         <widget class="QLabel" name="titleLab">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>119</width>
+            <height>42</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>42</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>37</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 16px &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>160</width>
+           <height>43</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>160</width>
+           <height>43</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#widget{
+background-color: rgb(0,0,0,153);
+}</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>7</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnStop">
+            <property name="minimumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>结束共享</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#btnStop{
+
+color: rgb(255, 255, 255);
+border-image:url(:/menu/img/Menu/ScreenShare_over.png);
+border 1px solid; 
+}
+#btnStop:hover{
+background-color:rgb(0,0,0,180);
+border-image:url(:/menu/img/Menu/ScreenShare_over_hover.png);
+}
+
+#btnStop:pressed{
+background-color: rgb(61, 61, 61);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnChangeScreen">
+            <property name="minimumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>切换</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#btnChangeScreen{
+color: rgb(255, 255, 255);
+border-image:url(:/menu/img/Menu/ScreenShare_change.png);
+border 1px solid;
+}
+
+#btnChangeScreen:hover{
+background-color:rgb(0,0,0,180);
+border-image:url(:/menu/img/Menu/ScreenShare_change_vover.png);
+}
+
+#btnChangeScreen:pressed{
+background-color: rgb(61, 61, 61);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCamera">
+            <property name="minimumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>切换</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#btnCamera{
+color: rgb(255, 255, 255);
+	border-image: url(:/menu/img/Menu/cameraOpen.png);
+border 1px solid;
+}
+
+#btnCamera:hover{
+background-color:rgb(0,0,0,180);
+	border-image: url(:/menu/img/Menu/cameraOpenHover.png);
+}
+
+#btnCamera:pressed{
+background-color: rgb(61, 61, 61);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnMic">
+            <property name="minimumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>切换</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#btnMic{
+color: rgb(255, 255, 255);
+	border-image: url(:/menu/img/Menu/mic.png);
+border 1px solid;
+}
+
+#btnMic:hover{
+background-color:rgb(0,0,0,180);
+	border-image: url(:/menu/img/Menu/micHover.png);
+}
+
+#btnMic:pressed{
+background-color: rgb(61, 61, 61);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="btnQuikTool">
+            <property name="minimumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>互动工具</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#btnQuikTool{
+
+border-image:url(:/menu/img/Menu/ScreenShare_tool.png);
+color: rgb(255, 255, 255);
+border 1px solid;
+}
+
+#btnQuikTool:hover{
+background-color:rgb(0,0,0,180);
+border-image:url(:/menu/img/Menu/ScreenShare_tool _hover.png);
+}
+
+#btnQuikTool:pressed{
+background-color: rgb(61, 61, 61,255);
+}
+#btnQuikTool::menu-indicator{ image: None; }</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <property name="autoRaise">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_right">
+         <property name="minimumSize">
+          <size>
+           <width>10</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>10</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0,0,0,153);
+border 1px solid;
+border-bottom-right-radius:4px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>28</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="btnRetract">
+           <property name="minimumSize">
+            <size>
+             <width>42</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>42</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>隐藏</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#btnRetract{
+background-color: rgba(0,0,0,153);
+color: rgb(255, 255, 255);
+border-image:url(:/menu/img/Menu/ScreenShare_ up.png);
+border 1px solid;
+border-bottom-right-radius:3px;
+border-bottom-left-radius:3px;
+}
+
+#btnRetract:hover{
+background-color: rgb(82, 204, 144);
+border-image:url(:/menu/img/Menu/ScreenShare_ up.png);
+}
+
+#btnRetract:pressed{
+background-color: rgb(61, 61, 61);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnOpen">
+           <property name="minimumSize">
+            <size>
+             <width>42</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>42</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>展开</string>
+           </property>
+           <property name="statusTip">
+            <string>展示</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#btnOpen{
+background-color: rgba(0,0,0,153);
+color: rgb(255, 255, 255);
+border-image:url(:/menu/img/Menu/ScreenShare_down.png);
+border 1px solid;
+border-bottom-right-radius:3px;
+border-bottom-left-radius:3px;
+}
+
+#btnOpen:hover{
+background-color: rgb(82, 204, 144);
+border-image:url(:/menu/img/Menu/ScreenShare_down.png);
+}
+
+#btnOpen:pressed{
+background-color: rgb(61, 61, 61);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>13</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../VLive/VLive.qrc"/>
+ </resources>
+ <connections/>
+</ui>

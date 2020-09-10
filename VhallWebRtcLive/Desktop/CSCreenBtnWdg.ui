@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CSCreenBtnWdg</class>
+ <widget class="QWidget" name="CSCreenBtnWdg">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>154</width>
+    <height>122</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#CSCreenBtnWdg{
+background-color: rgb(211, 237, 225);
+border:1px solid rgb(221, 221, 221);
+}
+
+#CSCreenBtnWdg:!enabled{
+	background-color: rgb(255, 0, 0);
+border:1px solid rgb(255, 255, 255);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="SelfDrawingButton" name="btn">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton{
+background-color: rgb(221, 221, 221);
+border:1px solid rgb(221, 221, 221);
+border-radius:8px;
+}
+
+QPushButton:hover{
+background-color: rgb(211, 237, 225);
+border-image: url(:/button/img/button/DesktopSharping_select.png);
+border:1px solid rgb(221, 221, 221);
+}
+
+QPushButton:pressed{
+background-color: rgb(211, 237, 225);
+background-repeat:none;
+
+border:none;
+}
+
+QPushButton:checked
+{
+background-color: rgb(211, 237, 225);
+border-image: url(:/button/img/button/DesktopSharping_select.png);
+border:1px solid rgb(221, 221, 221);
+}
+
+
+QPushButton:!enabled{
+	background-color: rgb(255, 255, 255);
+border:1px solid rgb(255, 255, 255);
+}
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>true</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label{
+color: rgb(34, 34, 34);
+background-color: rgb(255, 255, 255);
+font: 16px &quot;微软雅黑&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>屏幕一</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SelfDrawingButton</class>
+   <extends>QPushButton</extends>
+   <header>selfdrawingbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../VLive/VLive.qrc"/>
+ </resources>
+ <connections/>
+</ui>
