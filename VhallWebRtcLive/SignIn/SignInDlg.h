@@ -13,7 +13,7 @@ public:
 
     virtual void Notice(const CSTDMapParam &);
     virtual void Notice(const CSTDMapParamPtr &);
-	void SetStatistics(const int& iStatistics);//æ”¶åˆ°åå°æ¨é€çš„æ•°æ®ç»Ÿè®¡ 
+	void SetStatistics(const int& iStatistics);//ÊÕµ½ºóÌ¨ÍÆËÍµÄÊı¾İÍ³¼Æ 
 	void addItem(const SignInListItem::eSignInType& etype, const QStringList& strList);
 	void startSignIn(const int& iTime, const QString& strSignInId);
 	void SomeOneSignin(const QString& strSigner, const QString& strNick);
@@ -41,9 +41,9 @@ private:
 	QMap<int, QListWidgetItem*> mMapListWidgetItem;
 	QTimer* mpSignInTimer = nullptr;
 	int mCountDownTime = 30;
-	QString mStrSignInUi;//å‘èµ·ç­¾åˆ°ID
+	QString mStrSignInUi;//·¢ÆğÇ©µ½ID
 	int mSignInedCount = 0;
-	int mTotal;   //ç­¾åˆ°æ€»äººæ•°
+	int mTotal;   //Ç©µ½×ÜÈËÊı
 	std::list<std::string> mTotalList;
 	bool mSignIn = false;
 
