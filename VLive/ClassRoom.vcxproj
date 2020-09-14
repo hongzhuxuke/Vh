@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B814121D-2EEF-4531-9E21-5294CB21EBE4}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>VhallClassRoom</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>QT_QML_DEBUG;UNICODE;_UNICODE;WIN32;WIN64;OPENSDK;VH_CLASS_APP;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_OPENGLEXTENSIONS_LIB;QT_SQL_LIB;QT_TESTLIB_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)VhallClassSDK;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\WebRTC\include\;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\VhallWebRtcLive\Setting;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)$(Platform)\$(Configuration)\;$(ProjectDir)..\Unility\3rdParty\libcurl-7.61.1-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\libssh2-1.8.0-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\nghttp2-1.32.0-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\openssl-1.1.0i-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\zlib-1.2.11-vc15-x86\lib;$(SolutionDir)SocketIO\boost_1_66_0\stage\lib\x86\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Unility.lib;Ws2_32.lib;Wldap32.lib;winmm.lib;Crypt32.lib;Normaliz.lib;Advapi32.lib;msvcrtd.lib;VhallNetWork.lib;Qt5WebEngine.lib;Qt5WebEngineCore.lib;Qt5WebEngineWidgets.lib;opengl32.lib;glu32.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Networkd.lib;Qt5OpenGLd.lib;Qt5OpenGLExtensionsd.lib;Qt5Sqld.lib;Qt5Testd.lib;Qt5WebSocketsd.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)VhallClassSDK;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\WebRTC\include\;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\VhallWebRtcLive\Setting;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>QT_QML_DEBUG;UNICODE;_UNICODE;WIN32;WIN64;OPENSDK;VH_CLASS_APP;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_OPENGLEXTENSIONS_LIB;QT_SQL_LIB;QT_TESTLIB_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>QT_QML_DEBUG;UNICODE;_UNICODE;WIN32;WIN64;OPENSDK;VH_CLASS_APP;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_OPENGLEXTENSIONS_LIB;QT_SQL_LIB;QT_TESTLIB_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)VhallClassSDK;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\WebRTC\include\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\VhallWebRtcLive\Setting;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;$(SolutionDir)VhallClassSDK\VhallPaasSDK\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)$(Platform)\$(Configuration)\;$(ProjectDir)..\Unility\3rdParty\libcurl-7.61.1-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\libssh2-1.8.0-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\nghttp2-1.32.0-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\openssl-1.1.0i-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\zlib-1.2.11-vc15-x86\lib;$(SolutionDir)SocketIO\boost_1_66_0\stage\lib\x86\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Unility.lib;Ws2_32.lib;Wldap32.lib;winmm.lib;Crypt32.lib;Normaliz.lib;Advapi32.lib;msvcrtd.lib;VhallNetWork.lib;Qt5WebEngine.lib;Qt5WebEngineCore.lib;Qt5WebEngineWidgets.lib;opengl32.lib;glu32.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Networkd.lib;Qt5OpenGLd.lib;Qt5OpenGLExtensionsd.lib;Qt5Sqld.lib;Qt5Testd.lib;Qt5WebSocketsd.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)VhallClassSDK;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\WebRTC\include\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\VhallWebRtcLive\Setting;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;$(SolutionDir)VhallClassSDK\VhallPaasSDK\;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>QT_QML_DEBUG;UNICODE;_UNICODE;WIN32;WIN64;OPENSDK;VH_CLASS_APP;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_OPENGLEXTENSIONS_LIB;QT_SQL_LIB;QT_TESTLIB_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;UNILITY_EXPORT;VH_CLASS_APP;OPENSDK;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_OPENGLEXTENSIONS_LIB;QT_SQL_LIB;QT_TESTLIB_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\WebRTC\include\;$(SolutionDir)VhallClassSDK;$(SolutionDir)common\Tips;$(SolutionDir)\VhallWebRtcLive\Setting;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(ProjectDir)..\Unility\3rdParty\libcurl-7.61.1-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\libssh2-1.8.0-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\nghttp2-1.32.0-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\openssl-1.1.0i-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\zlib-1.2.11-vc15-x86\lib;$(SolutionDir)$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Unility.lib;Ws2_32.lib;Wldap32.lib;winmm.lib;Crypt32.lib;Normaliz.lib;Advapi32.lib;msvcrt.lib;VhallNetWork.lib;opengl32.lib;glu32.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib;Qt5OpenGL.lib;Qt5OpenGLExtensions.lib;Qt5Sql.lib;Qt5Test.lib;Qt5WebSockets.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\WebRTC\include\;$(SolutionDir)VhallClassSDK;$(SolutionDir)common\Tips;$(SolutionDir)\VhallWebRtcLive\Setting;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;UNILITY_EXPORT;VH_CLASS_APP;OPENSDK;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_OPENGLEXTENSIONS_LIB;QT_SQL_LIB;QT_TESTLIB_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;UNILITY_EXPORT;VH_CLASS_APP;OPENSDK;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_OPENGLEXTENSIONS_LIB;QT_SQL_LIB;QT_TESTLIB_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)VhallClassSDK;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\WebRTC\include\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\VhallWebRtcLive\Setting;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;$(SolutionDir)VhallClassSDK\VhallPaasSDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(ProjectDir)..\Unility\3rdParty\libcurl-7.61.1-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\libssh2-1.8.0-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\nghttp2-1.32.0-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\openssl-1.1.0i-vc15-x86\lib;$(ProjectDir)..\Unility\3rdParty\zlib-1.2.11-vc15-x86\lib;$(SolutionDir)$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Unility.lib;Ws2_32.lib;Wldap32.lib;winmm.lib;Crypt32.lib;Normaliz.lib;Advapi32.lib;msvcrt.lib;VhallNetWork.lib;opengl32.lib;glu32.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib;Qt5OpenGL.lib;Qt5OpenGLExtensions.lib;Qt5Sql.lib;Qt5Test.lib;Qt5WebSockets.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)VhallClassSDK;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\WebRTC\include\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\VhallWebRtcLive\Setting;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;$(SolutionDir)VhallClassSDK\VhallPaasSDK;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;UNILITY_EXPORT;VH_CLASS_APP;OPENSDK;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_OPENGLEXTENSIONS_LIB;QT_SQL_LIB;QT_TESTLIB_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\baseclass\pathManage.cpp" />
+    <ClCompile Include="..\common\baseclass\pathmanager.cpp" />
+    <ClCompile Include="..\common\CLineEditInput.cpp" />
+    <ClCompile Include="..\common\ConfigSetting.cpp" />
+    <ClCompile Include="..\common\CRC32.cpp" />
+    <ClCompile Include="..\common\ExceptionDump.cpp" />
+    <ClCompile Include="..\common\push_button.cpp" />
+    <ClCompile Include="..\common\Tips\TipsWdg.cpp" />
+    <ClCompile Include="..\common\ToolButton.cpp" />
+    <ClCompile Include="..\common\UACUtility.cpp" />
+    <ClCompile Include="..\common\UpLoader.cpp" />
+    <ClCompile Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_reader.cpp" />
+    <ClCompile Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_value.cpp" />
+    <ClCompile Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_writer.cpp" />
+    <ClCompile Include="AMDAdapterCheck.cpp" />
+    <ClCompile Include="CWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_TipsWdg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TipsWdg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LoginWdg.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RelevantDlg\CAboutDlg.cpp" />
+    <ClCompile Include="VLiveCustomEvent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\common\Tips\TipsWdg.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <QtUic Include="AMDAdapterCheck.ui" />
+    <QtUic Include="LoginWdg.ui" />
+    <QtUic Include="RelevantDlg\CAboutDlg.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="VLive.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="LoginWdg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="VLiveCustomEvent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\common\ToolButton.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\common\push_button.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\baseclass\pathManage.h" />
+    <ClInclude Include="..\common\baseclass\pathmanager.h" />
+    <QtMoc Include="..\common\CLineEditInput.h" />
+    <ClInclude Include="..\common\class.pub.Const.h" />
+    <ClInclude Include="..\common\ConfigSetting.h" />
+    <ClInclude Include="..\common\CRC32.h" />
+    <ClInclude Include="..\common\def\VH_ConstDeff.h" />
+    <ClInclude Include="..\common\ExceptionDump.h" />
+    <QtMoc Include="RelevantDlg\CAboutDlg.h" />
+    <CustomBuild Include="..\common\Tips\TipsWdg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_QML_DEBUG -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DOPENSDK -DVH_CLASS_APP -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_OPENGLEXTENSIONS_LIB -DQT_WEBENGINE_LIB -DQT_WEBENGINECORE_LIB -DQT_WEBENGINEWIDGETS_LIB -DQT_SQL_LIB -DQT_TESTLIB_LIB -DQT_WEBCHANNEL_LIB -DQT_WEBSOCKETS_LIB -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)Unility" "-I$(SolutionDir)common" "-I$(SolutionDir)common\baseclass" "-I$(SolutionDir)common\def" "-I$(QTDIR)\include\QtNetwork" "-I.\..\common" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtOpenGLExtensions" "-I$(QTDIR)\include\QtWebEngine" "-I$(QTDIR)\include\QtWebEngineCore" "-I$(QTDIR)\include\QtWebEngineWidgets" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtTest" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWebSockets" "-I$(SolutionDir)VhallClassSDK" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\WebRTC\include" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common" "-I$(SolutionDir)common\Tips" "-I$(SolutionDir)\VhallWebRtcLive\Setting" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_QML_DEBUG -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DOPENSDK -DVH_CLASS_APP -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_OPENGLEXTENSIONS_LIB -DQT_WEBENGINE_LIB -DQT_WEBENGINECORE_LIB -DQT_WEBENGINEWIDGETS_LIB -DQT_SQL_LIB -DQT_TESTLIB_LIB -DQT_WEBCHANNEL_LIB -DQT_WEBSOCKETS_LIB -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)Unility" "-I$(SolutionDir)common" "-I$(SolutionDir)common\baseclass" "-I$(SolutionDir)common\def" "-I$(QTDIR)\include\QtNetwork" "-I.\..\common" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtOpenGLExtensions" "-I$(QTDIR)\include\QtWebEngine" "-I$(QTDIR)\include\QtWebEngineCore" "-I$(QTDIR)\include\QtWebEngineWidgets" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtTest" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWebSockets" "-I$(SolutionDir)VhallClassSDK" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\WebRTC\include" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common" "-I$(SolutionDir)common\Tips" "-I$(SolutionDir)\VhallWebRtcLive\Setting" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNILITY_EXPORT -DVH_CLASS_APP -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_OPENGLEXTENSIONS_LIB -DQT_WEBENGINE_LIB -DQT_WEBENGINECORE_LIB -DQT_WEBENGINEWIDGETS_LIB -DQT_SQL_LIB -DQT_TESTLIB_LIB -DQT_WEBCHANNEL_LIB -DQT_WEBSOCKETS_LIB -DOPENSDK -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)Unility" "-I$(SolutionDir)common" "-I$(SolutionDir)common\baseclass" "-I$(SolutionDir)common\def" "-I$(QTDIR)\include\QtNetwork" "-I.\..\common" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtOpenGLExtensions" "-I$(QTDIR)\include\QtWebEngine" "-I$(QTDIR)\include\QtWebEngineCore" "-I$(QTDIR)\include\QtWebEngineWidgets" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtTest" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWebSockets" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\WebRTC\include" "-I$(SolutionDir)VhallClassSDK" "-I$(SolutionDir)common\Tips" "-I$(SolutionDir)\VhallWebRtcLive\Setting" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNILITY_EXPORT -DVH_CLASS_APP -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_OPENGLEXTENSIONS_LIB -DQT_WEBENGINE_LIB -DQT_WEBENGINECORE_LIB -DQT_WEBENGINEWIDGETS_LIB -DQT_SQL_LIB -DQT_TESTLIB_LIB -DQT_WEBCHANNEL_LIB -DQT_WEBSOCKETS_LIB -DOPENSDK -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)Unility" "-I$(SolutionDir)common" "-I$(SolutionDir)common\baseclass" "-I$(SolutionDir)common\def" "-I$(QTDIR)\include\QtNetwork" "-I.\..\common" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtOpenGLExtensions" "-I$(QTDIR)\include\QtWebEngine" "-I$(QTDIR)\include\QtWebEngineCore" "-I$(QTDIR)\include\QtWebEngineWidgets" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtTest" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWebSockets" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\WebRTC\include" "-I$(SolutionDir)VhallClassSDK" "-I$(SolutionDir)common\Tips" "-I$(SolutionDir)\VhallWebRtcLive\Setting" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json" "-I$(SolutionDir)VhallClassSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty"</Command>
+    </CustomBuild>
+    <ClInclude Include="..\common\UACUtility.h" />
+    <QtMoc Include="AMDAdapterCheck.h" />
+    <QtMoc Include="..\common\UpLoader.h" />
+    <QtMoc Include="CWidget.h" />
+    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\autolink.h" />
+    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\config.h" />
+    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\features.h" />
+    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\forwards.h" />
+    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json.h" />
+    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_batchallocator.h" />
+    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\reader.h" />
+    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\value.h" />
+    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\writer.h" />
+    <ClInclude Include="GeneratedFiles\ui_TipsWdg.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VLive.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="vlive.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_internalarray.inl" />
+    <None Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_internalmap.inl" />
+    <None Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_valueiterator.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="Qt5" Qt5Version_x0020_x64="X64" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

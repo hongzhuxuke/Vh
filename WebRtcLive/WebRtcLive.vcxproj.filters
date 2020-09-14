@@ -1,0 +1,1918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{184ed238-bb65-49c2-b5b2-f9a32dd94b45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{5a50af38-67f1-4224-b8d4-ff1f991fb8e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\baseclass">
+      <UniqueIdentifier>{4c626c30-4299-4d2d-8369-c8700ec38992}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\def">
+      <UniqueIdentifier>{733e846a-392f-4066-957f-67cd6ad986ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{1ca05a82-7954-4045-bf15-15780cad926a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\WebView">
+      <UniqueIdentifier>{25e5a8e3-2cdb-4135-a1aa-a1bf071daa9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Notice">
+      <UniqueIdentifier>{a4ef3b33-41e7-4e6d-9fd7-a9b063bccbad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\FadeOutTip">
+      <UniqueIdentifier>{48bcb1c7-7d89-49ad-824d-0bc958f6e61f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Tool">
+      <UniqueIdentifier>{e2241f60-16ab-4af0-b28b-d1de8deee8e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Answer">
+      <UniqueIdentifier>{fa1c07ce-f0b9-494c-8711-c32a2558ac6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Timer">
+      <UniqueIdentifier>{4a8ed934-7506-42bf-8773-0d80f2a9567e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\SignIn">
+      <UniqueIdentifier>{5c8b2c05-fa9f-48a2-ace4-7bd4cab94846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\Tips">
+      <UniqueIdentifier>{049cd6a9-4a90-4260-8f96-1ebca8848c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\message">
+      <UniqueIdentifier>{9994c67c-4a0b-4d03-904b-24a2aa4d3568}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\memberList">
+      <UniqueIdentifier>{42f60f4f-fa05-4290-9a5c-dd2ab7718830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Desktop">
+      <UniqueIdentifier>{addae00b-8458-4c14-86e2-965a094e29b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\MediaFilePlay">
+      <UniqueIdentifier>{54be95cb-16d3-4cd3-a436-d20a11bb57d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\RenderWdg">
+      <UniqueIdentifier>{76db2084-d29c-48ab-9c47-6b62bee3cf1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\TrophyWdg">
+      <UniqueIdentifier>{771645a7-a716-4f68-857d-777e550414e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\MainUI">
+      <UniqueIdentifier>{3a4abe65-1f7a-4c4a-95e8-b8160939588c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\DoublePush">
+      <UniqueIdentifier>{a47bc0e7-968a-428f-b89f-b9737a9f1538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\MixStream">
+      <UniqueIdentifier>{fc6ca721-bd85-4ecb-8b45-d4a4d5613b70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\InviteJoinWdg">
+      <UniqueIdentifier>{431cb481-d832-4d32-9741-6e2b956da541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Setting">
+      <UniqueIdentifier>{28f0ab9c-2132-4cc8-b75e-466614c1512a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\TabWidget">
+      <UniqueIdentifier>{87af9a46-d726-4f09-9b52-04c8f1b5d046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\DeviceTesting">
+      <UniqueIdentifier>{4e5a88b4-3f1b-4119-9a69-9772df1503da}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\ComboBox.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\CPaintStateBtn.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\baseclass\pathmanager.cpp">
+      <Filter>common\baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ConfigSetting.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\VhallRenderMaskWdg.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\CToolTips.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="InviteJoinWdg\InviteJoinWidget.cpp">
+      <Filter>UI\InviteJoinWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\message\Msg_MainUI.cpp">
+      <Filter>common\message</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ComboBox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CToolTips.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_InviteJoinWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VhallRenderMaskWdg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\RenderManager.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\FloatRender.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="WebView\MediaPlayWebView.cpp">
+      <Filter>UI\WebView</Filter>
+    </ClCompile>
+    <ClCompile Include="MixStream\MixStreamLayout.cpp">
+      <Filter>UI\MixStream</Filter>
+    </ClCompile>
+    <ClCompile Include="FadeOutTip\movefadeouttipwidget.cpp">
+      <Filter>UI\FadeOutTip</Filter>
+    </ClCompile>
+    <ClCompile Include="FadeOutTip\vhfadeouttipwidget.cpp">
+      <Filter>UI\FadeOutTip</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting\VhallIALiveSettingDlg.cpp">
+      <Filter>UI\Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\ExitFullScreenWdg.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\FullScreenRender.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VhallIALiveSettingDlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\DoubleRenderWdg.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaFilePlay\vhallprocessslider.cpp">
+      <Filter>UI\MediaFilePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaFilePlay\VideoChoiceUI.cpp">
+      <Filter>UI\MediaFilePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Desktop\CScreenShareToolWgd.cpp">
+      <Filter>UI\Desktop</Filter>
+    </ClCompile>
+    <ClCompile Include="Desktop\screenChoiceDlg.cpp">
+      <Filter>UI\Desktop</Filter>
+    </ClCompile>
+    <ClCompile Include="VhallWebRtcLive.cpp">
+      <Filter>UI\MainUI</Filter>
+    </ClCompile>
+    <ClCompile Include="InviteJoinWdg\ApplyJoinWdg.cpp">
+      <Filter>UI\InviteJoinWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="WebRtcLiveWdg.cpp">
+      <Filter>UI\MainUI</Filter>
+    </ClCompile>
+    <ClCompile Include="memberList\MemberItemWdg.cpp">
+      <Filter>UI\memberList</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\TeacherRenderWdg.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\ESCExitNotice.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\CBaseRender.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\TeacherCtrlWdg.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\BigRenderCtrl.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="Desktop\CSCreenBtnWdg.cpp">
+      <Filter>UI\Desktop</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting\VolumePaintWdg.cpp">
+      <Filter>UI\Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Desktop\SelfDrawingButton.cpp">
+      <Filter>UI\Desktop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\push_button.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="memberList\CMemberListWdg.cpp">
+      <Filter>UI\memberList</Filter>
+    </ClCompile>
+    <ClCompile Include="WebView\AnswerWebView.cpp">
+      <Filter>UI\WebView</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\CorserSetButton.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="WebView\FullWebView.cpp">
+      <Filter>UI\WebView</Filter>
+    </ClCompile>
+    <ClCompile Include="WebView\FullScreenBtn.cpp">
+      <Filter>UI\WebView</Filter>
+    </ClCompile>
+    <ClCompile Include="TabWidget\CTabBar.cpp">
+      <Filter>UI\TabWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="TabWidget\CTabWidget.cpp">
+      <Filter>UI\TabWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="TabWidget\CPaintLabel.cpp">
+      <Filter>UI\TabWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="TabWidget\CTabItemDlg.cpp">
+      <Filter>UI\TabWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="Notice\NoticeItem.cpp">
+      <Filter>UI\Notice</Filter>
+    </ClCompile>
+    <ClCompile Include="Notice\NoticeSendWdg.cpp">
+      <Filter>UI\Notice</Filter>
+    </ClCompile>
+    <ClCompile Include="Notice\NoticeShowWdg.cpp">
+      <Filter>UI\Notice</Filter>
+    </ClCompile>
+    <ClCompile Include="Notice\moveNoticeWdg.cpp">
+      <Filter>UI\Notice</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\TrophyWdg\TrophyWdg.cpp">
+      <Filter>UI\TrophyWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="Answer\AnswerTool.cpp">
+      <Filter>UI\Answer</Filter>
+    </ClCompile>
+    <ClCompile Include="Answer\AnswerStatistics.cpp">
+      <Filter>UI\Answer</Filter>
+    </ClCompile>
+    <ClCompile Include="Answer\StudentStat.cpp">
+      <Filter>UI\Answer</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\CAction.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\cmapButton.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\CTimeButton.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\GifButton.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\languageSetDlg.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\LeftToolBarWdg.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\Menu.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\menuItem.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\menuWdg.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\MoreSettingWdg.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\VhallLiveTitle.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\VHDialog.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer\TimerWdg.cpp">
+      <Filter>UI\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer\NumWdg.cpp">
+      <Filter>UI\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="SignIn\SignInDlg.cpp">
+      <Filter>UI\SignIn</Filter>
+    </ClCompile>
+    <ClCompile Include="SignIn\SignInListItem.cpp">
+      <Filter>UI\SignIn</Filter>
+    </ClCompile>
+    <ClCompile Include="SignIn\StuSignInDlg.cpp">
+      <Filter>UI\SignIn</Filter>
+    </ClCompile>
+    <ClCompile Include="Desktop\ShortcutWdg.cpp">
+      <Filter>UI\Desktop</Filter>
+    </ClCompile>
+    <ClCompile Include="WebRtcLiveControl.cpp">
+      <Filter>UI\MainUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ToolButton.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\title_button.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\CMyButton.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting\AuxiliaryCameraChoiceWdg.cpp">
+      <Filter>UI\Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AuxiliaryCameraChoiceWdg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="DoublePush\DoublePubStuChoiceUI.cpp">
+      <Filter>UI\DoublePush</Filter>
+    </ClCompile>
+    <ClCompile Include="DoublePush\CtrlDoublePubStuWdg.cpp">
+      <Filter>UI\DoublePush</Filter>
+    </ClCompile>
+    <ClCompile Include="DoublePush\InvitationStateWdg.cpp">
+      <Filter>UI\DoublePush</Filter>
+    </ClCompile>
+    <ClCompile Include="Desktop\screenChoiceItem.cpp">
+      <Filter>UI\Desktop</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaFilePlay\NoiseTooltip.cpp">
+      <Filter>UI\MediaFilePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\CVideoRenderReceiveWdg.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="WebView\ChangeView.cpp">
+      <Filter>UI\WebView</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\MultiClassFloatWnd.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\MemberCtrlMaskWdg.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWdg\VhallRenderWdg.cpp">
+      <Filter>UI\RenderWdg</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\LibCefViewWdg.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\ChooseTestPaperDlg.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\blackMenuWdg.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\ShadowBoxDlg.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Desktop\softwareSourceDlg.cpp">
+      <Filter>UI\Desktop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\Tips\TipsWdg.cpp">
+      <Filter>common\Tips</Filter>
+    </ClCompile>
+    <ClCompile Include="CWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceTesting\DeviceTestingWdg.cpp">
+      <Filter>UI\DeviceTesting</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\CDisEnablePushButton.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\CDisEnableCheckBox.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\CDisEnableComboBox.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\CDisEnableLineEdit.cpp">
+      <Filter>UI\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting\NoiseTooltip.cpp">
+      <Filter>UI\Setting</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vhallwebrtclive_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\CPaintStateBtn.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\baseclass\pathmanager.h">
+      <Filter>common\baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ConfigSetting.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\message\Msg_MainUI.h">
+      <Filter>common\message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\def\VH_ConstDeff.h">
+      <Filter>common\def</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VhallUI_define.h">
+      <Filter>UI\MainUI</Filter>
+    </ClInclude>
+    <ClInclude Include="VhallWebRtcLive.h">
+      <Filter>UI\MainUI</Filter>
+    </ClInclude>
+    <ClInclude Include="priConst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderWdg\CBaseRender.h">
+      <Filter>UI\RenderWdg</Filter>
+    </ClInclude>
+    <ClInclude Include="Setting\NoiseTooltip.h">
+      <Filter>UI\Setting</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\common\ComboBox.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\VhallRenderMaskWdg.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\CToolTips.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="InviteJoinWdg\InviteJoinWidget.h">
+      <Filter>UI\InviteJoinWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\RenderManager.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\FloatRender.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="WebView\MediaPlayWebView.h">
+      <Filter>UI\WebView</Filter>
+    </QtMoc>
+    <QtMoc Include="MixStream\MixStreamLayout.h">
+      <Filter>UI\MixStream</Filter>
+    </QtMoc>
+    <QtMoc Include="FadeOutTip\movefadeouttipwidget.h">
+      <Filter>UI\FadeOutTip</Filter>
+    </QtMoc>
+    <QtMoc Include="FadeOutTip\vhfadeouttipwidget.h">
+      <Filter>UI\FadeOutTip</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\ExitFullScreenWdg.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\FullScreenRender.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\DoubleRenderWdg.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="MediaFilePlay\vhallprocessslider.h">
+      <Filter>UI\MediaFilePlay</Filter>
+    </QtMoc>
+    <QtMoc Include="Desktop\CScreenShareToolWgd.h">
+      <Filter>UI\Desktop</Filter>
+    </QtMoc>
+    <QtMoc Include="Desktop\screenChoiceDlg.h">
+      <Filter>UI\Desktop</Filter>
+    </QtMoc>
+    <QtMoc Include="InviteJoinWdg\ApplyJoinWdg.h">
+      <Filter>UI\InviteJoinWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="MediaFilePlay\VideoChoiceUI.h">
+      <Filter>UI\MediaFilePlay</Filter>
+    </QtMoc>
+    <QtMoc Include="memberList\MemberItemWdg.h">
+      <Filter>UI\memberList</Filter>
+    </QtMoc>
+    <QtMoc Include="CWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="WebRtcLiveWdg.h">
+      <Filter>UI\MainUI</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\TeacherRenderWdg.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\ESCExitNotice.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\TeacherCtrlWdg.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\BigRenderCtrl.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="Desktop\CSCreenBtnWdg.h">
+      <Filter>UI\Desktop</Filter>
+    </QtMoc>
+    <QtMoc Include="Setting\VolumePaintWdg.h">
+      <Filter>UI\Setting</Filter>
+    </QtMoc>
+    <QtMoc Include="Desktop\SelfDrawingButton.h">
+      <Filter>UI\Desktop</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\push_button.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="memberList\CMemberListWdg.h">
+      <Filter>UI\memberList</Filter>
+    </QtMoc>
+    <QtMoc Include="WebView\AnswerWebView.h">
+      <Filter>UI\WebView</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\CorserSetButton.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="WebView\FullWebView.h">
+      <Filter>UI\WebView</Filter>
+    </QtMoc>
+    <QtMoc Include="WebView\FullScreenBtn.h">
+      <Filter>UI\WebView</Filter>
+    </QtMoc>
+    <QtMoc Include="TabWidget\CTabBar.h">
+      <Filter>UI\TabWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="TabWidget\CTabWidget.h">
+      <Filter>UI\TabWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="TabWidget\CPaintLabel.h">
+      <Filter>UI\TabWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="TabWidget\CTabItemDlg.h">
+      <Filter>UI\TabWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="Notice\NoticeItem.h">
+      <Filter>UI\Notice</Filter>
+    </QtMoc>
+    <QtMoc Include="Notice\NoticeSendWdg.h">
+      <Filter>UI\Notice</Filter>
+    </QtMoc>
+    <QtMoc Include="Notice\NoticeShowWdg.h">
+      <Filter>UI\Notice</Filter>
+    </QtMoc>
+    <QtMoc Include="Notice\moveNoticeWdg.h">
+      <Filter>UI\Notice</Filter>
+    </QtMoc>
+    <QtMoc Include="Setting\VhallIALiveSettingDlg.h">
+      <Filter>UI\Setting</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\TrophyWdg\TrophyWdg.h">
+      <Filter>UI\TrophyWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="Answer\AnswerTool.h">
+      <Filter>UI\Answer</Filter>
+    </QtMoc>
+    <QtMoc Include="Answer\AnswerStatistics.h">
+      <Filter>UI\Answer</Filter>
+    </QtMoc>
+    <QtMoc Include="Answer\StudentStat.h">
+      <Filter>UI\Answer</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\CAction.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\cmapButton.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\CTimeButton.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\GifButton.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\languageSetDlg.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\LeftToolBarWdg.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\Menu.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\menuItem.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\menuWdg.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\VhallLiveTitle.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\VHDialog.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\MoreSettingWdg.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Timer\TimerWdg.h">
+      <Filter>UI\Timer</Filter>
+    </QtMoc>
+    <QtMoc Include="Timer\NumWdg.h">
+      <Filter>UI\Timer</Filter>
+    </QtMoc>
+    <QtMoc Include="SignIn\SignInDlg.h">
+      <Filter>UI\SignIn</Filter>
+    </QtMoc>
+    <QtMoc Include="SignIn\SignInListItem.h">
+      <Filter>UI\SignIn</Filter>
+    </QtMoc>
+    <QtMoc Include="SignIn\StuSignInDlg.h">
+      <Filter>UI\SignIn</Filter>
+    </QtMoc>
+    <QtMoc Include="Desktop\ShortcutWdg.h">
+      <Filter>UI\Desktop</Filter>
+    </QtMoc>
+    <QtMoc Include="WebRtcLiveControl.h">
+      <Filter>UI\MainUI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\ToolButton.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\title_button.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\CMyButton.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="DoublePush\DoublePubStuChoiceUI.h">
+      <Filter>UI\DoublePush</Filter>
+    </QtMoc>
+    <QtMoc Include="DoublePush\CtrlDoublePubStuWdg.h">
+      <Filter>UI\DoublePush</Filter>
+    </QtMoc>
+    <QtMoc Include="Setting\AuxiliaryCameraChoiceWdg.h">
+      <Filter>UI\Setting</Filter>
+    </QtMoc>
+    <QtMoc Include="DoublePush\InvitationStateWdg.h">
+      <Filter>UI\DoublePush</Filter>
+    </QtMoc>
+    <QtMoc Include="Desktop\screenChoiceItem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MediaFilePlay\NoiseTooltip.h">
+      <Filter>UI\MediaFilePlay</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\CVideoRenderReceiveWdg.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="WebView\ChangeView.h">
+      <Filter>UI\WebView</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\MultiClassFloatWnd.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\MemberCtrlMaskWdg.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWdg\VhallRenderWdg.h">
+      <Filter>UI\RenderWdg</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\LibCefViewWdg.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\ChooseTestPaperDlg.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\blackMenuWdg.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\ShadowBoxDlg.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Desktop\softwareSourceDlg.h">
+      <Filter>UI\Desktop</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\Tips\TipsWdg.h">
+      <Filter>common\Tips</Filter>
+    </QtMoc>
+    <QtMoc Include="DeviceTesting\DeviceTestingWdg.h">
+      <Filter>UI\DeviceTesting</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\CDisEnablePushButton.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\CDisEnableCheckBox.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\CDisEnableComboBox.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\CDisEnableLineEdit.h">
+      <Filter>UI\Tool</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="RenderWdg\VhallRenderMaskWdg.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\CToolTips.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="InviteJoinWdg\InviteJoinWidget.ui">
+      <Filter>UI\InviteJoinWdg</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\RenderManager.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\FloatRender.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="WebView\MediaPlayWebView.ui">
+      <Filter>UI\WebView</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\FullScreenRender.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\ExitFullScreenWdg.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="Setting\VhallIALiveSettingDlg.ui">
+      <Filter>UI\Setting</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\DoubleRenderWdg.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="MediaFilePlay\VideoChoiceUI.ui">
+      <Filter>UI\MediaFilePlay</Filter>
+    </QtUic>
+    <QtUic Include="Desktop\CScreenShareToolWgd.ui">
+      <Filter>UI\Desktop</Filter>
+    </QtUic>
+    <QtUic Include="InviteJoinWdg\ApplyJoinWdg.ui">
+      <Filter>UI\InviteJoinWdg</Filter>
+    </QtUic>
+    <QtUic Include="WebRtcLiveWdg.ui">
+      <Filter>UI\MainUI</Filter>
+    </QtUic>
+    <QtUic Include="memberList\OnlineItemWdg.ui">
+      <Filter>UI\memberList</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\TeacherRenderWdg.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\ESCExitNotice.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\TeacherCtrlWdg.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\BigRenderCtrl.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="Desktop\CSCreenBtnWdg.ui">
+      <Filter>UI\Desktop</Filter>
+    </QtUic>
+    <QtUic Include="Desktop\screenChoiceDlg.ui">
+      <Filter>UI\Desktop</Filter>
+    </QtUic>
+    <QtUic Include="Setting\VolumePaintWdg.ui">
+      <Filter>UI\Setting</Filter>
+    </QtUic>
+    <QtUic Include="memberList\CMemberListWdg.ui">
+      <Filter>UI\memberList</Filter>
+    </QtUic>
+    <QtUic Include="WebView\AnswerWebView.ui">
+      <Filter>UI\WebView</Filter>
+    </QtUic>
+    <QtUic Include="WebView\FullWebView.ui">
+      <Filter>UI\WebView</Filter>
+    </QtUic>
+    <QtUic Include="WebView\FullScreenBtn.ui">
+      <Filter>UI\WebView</Filter>
+    </QtUic>
+    <QtUic Include="TabWidget\CTabItemDlg.ui">
+      <Filter>UI\TabWidget</Filter>
+    </QtUic>
+    <QtUic Include="Notice\NoticeItem.ui">
+      <Filter>UI\Notice</Filter>
+    </QtUic>
+    <QtUic Include="Notice\NoticeSendWdg.ui">
+      <Filter>UI\Notice</Filter>
+    </QtUic>
+    <QtUic Include="Notice\NoticeShowWdg.ui">
+      <Filter>UI\Notice</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\TrophyWdg\TrophyWdg.ui">
+      <Filter>UI\TrophyWdg</Filter>
+    </QtUic>
+    <QtUic Include="Answer\AnswerTool.ui">
+      <Filter>UI\Answer</Filter>
+    </QtUic>
+    <QtUic Include="Answer\AnswerStatistics.ui">
+      <Filter>UI\Answer</Filter>
+    </QtUic>
+    <QtUic Include="MediaFilePlay\VideoChoiceItem.ui">
+      <Filter>UI\MediaFilePlay</Filter>
+    </QtUic>
+    <QtUic Include="Answer\StudentStat.ui">
+      <Filter>UI\Answer</Filter>
+    </QtUic>
+    <QtUic Include="Tool\languageSetDlg.ui">
+      <Filter>UI\Tool</Filter>
+    </QtUic>
+    <QtUic Include="Tool\LeftToolBarWdg.ui">
+      <Filter>UI\Tool</Filter>
+    </QtUic>
+    <QtUic Include="Tool\menuItem.ui">
+      <Filter>UI\Tool</Filter>
+    </QtUic>
+    <QtUic Include="Tool\menuWdg.ui">
+      <Filter>UI\Tool</Filter>
+    </QtUic>
+    <QtUic Include="Tool\VhallLiveTitle.ui">
+      <Filter>UI\Tool</Filter>
+    </QtUic>
+    <QtUic Include="Tool\MoreSettingWdg.ui">
+      <Filter>UI\Tool</Filter>
+    </QtUic>
+    <QtUic Include="Timer\TimerWdg.ui">
+      <Filter>UI\Timer</Filter>
+    </QtUic>
+    <QtUic Include="Timer\NumWdg.ui">
+      <Filter>UI\Timer</Filter>
+    </QtUic>
+    <QtUic Include="SignIn\SignInDlg.ui">
+      <Filter>UI\SignIn</Filter>
+    </QtUic>
+    <QtUic Include="SignIn\SignInListItem.ui">
+      <Filter>UI\SignIn</Filter>
+    </QtUic>
+    <QtUic Include="SignIn\StuSignInDlg.ui">
+      <Filter>UI\SignIn</Filter>
+    </QtUic>
+    <QtUic Include="Desktop\ShortcutWdg.ui">
+      <Filter>UI\Desktop</Filter>
+    </QtUic>
+    <QtUic Include="FadeOutTip\vhfadeouttipwidget.ui">
+      <Filter>UI\FadeOutTip</Filter>
+    </QtUic>
+    <QtUic Include="Setting\AuxiliaryCameraChoiceWdg.ui">
+      <Filter>UI\Setting</Filter>
+    </QtUic>
+    <QtUic Include="DoublePush\DoublePubStuChoiceItem.ui">
+      <Filter>UI\DoublePush</Filter>
+    </QtUic>
+    <QtUic Include="DoublePush\DoublePubStuChoiceUI.ui">
+      <Filter>UI\DoublePush</Filter>
+    </QtUic>
+    <QtUic Include="DoublePush\CtrlDoublePubStuWdg.ui">
+      <Filter>UI\DoublePush</Filter>
+    </QtUic>
+    <QtUic Include="DoublePush\InvitationStateWdg.ui">
+      <Filter>UI\DoublePush</Filter>
+    </QtUic>
+    <QtUic Include="Desktop\screenChoiceItem.ui">
+      <Filter>UI\Desktop</Filter>
+    </QtUic>
+    <QtUic Include="MediaFilePlay\NoiseTooltip.ui">
+      <Filter>UI\MediaFilePlay</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\CVideoRenderReceiveWdg.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="WebView\ChangeView.ui">
+      <Filter>UI\WebView</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\MultiClassFloatWnd.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\MemberCtrlMaskWdg.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="RenderWdg\VhallRenderWdg.ui">
+      <Filter>UI\RenderWdg</Filter>
+    </QtUic>
+    <QtUic Include="Tool\ChooseTestPaperDlg.ui">
+      <Filter>UI\Tool</Filter>
+    </QtUic>
+    <QtUic Include="Tool\blackMenuWdg.ui">
+      <Filter>UI\Tool</Filter>
+    </QtUic>
+    <QtUic Include="Tool\ShadowBoxDlg.ui">
+      <Filter>UI\Tool</Filter>
+    </QtUic>
+    <QtUic Include="Desktop\softwareSourceDlg.ui">
+      <Filter>UI\Desktop</Filter>
+    </QtUic>
+    <QtUic Include="..\common\Tips\TipsWdg.ui">
+      <Filter>common\Tips</Filter>
+    </QtUic>
+    <QtUic Include="DeviceTesting\DeviceTestingWdg.ui">
+      <Filter>UI\DeviceTesting</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\VLive\Resources\loading.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\camera_click.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\camera_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\camera_mute.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\camera_mute_click.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\camera_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\closeCamera_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\closeCamera_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\guest_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\guest_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\host_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\host_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\main_view.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\main_view_click.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\main_view_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\member_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\member_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\mic_click.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\mic_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\mic_mute.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\mic_mute_click.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\mic_mute_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\mic_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\nojoin_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\nojoin_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\off_speak.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\off_speak_click.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\off_speak_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\setspeaker.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\setspeaker_click.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\setspeaker_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\speak.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\speak_click.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\speak_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\RecordPopupBg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\moveToBottom.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\moveToBottomDefault.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\moveToTop.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\moveToTopDefualt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\startLive.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\stopLive.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\mute.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\Popup_bg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\devicePopup_gb.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\stopShare.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\volume.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\audioSet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\assistant.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\closeRaiseHands.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\CMemberListDlg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\guest.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\host.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\kickOutWdg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\mininize.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\openRaiseHands.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\prohibitChatWdg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\prohibitSpeaking.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\RaiseHands.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\RaiseHandsWdg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\memberList\upper.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\camera.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\float_select.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\grid_select.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\tiled_select.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\float.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\grid.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\tiled.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\saving.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\closing.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\live_end.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\live_no_start.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\camera_mute_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\wait_background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\vhallactive\tooltips.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\btnmemberWithHU.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\btnmember.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\arrow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\stopRecord.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\recoveryRecord.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\closeVoiceTranslate.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\openVoiceTranslate.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\sub_area_share.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\sub_desktop_share.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\sub_soft_share.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\desktop_stream_status.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\stop_live.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\camera_close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\camera_open.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\chat.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\desktop_share.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\insertImage.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\insertMediaFile.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\insertText.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\live_plugin.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\media.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\mic_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\mic_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\mic_30.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\mic_50.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\mic_70.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\mic_90.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\mic_100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\mic_close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\player_close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\player_open.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\record.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\recordSuspend.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\recording.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\suspendRecord.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\setting.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\start_live.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\stop_sharing.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\CtrlButton\stream_status.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\fullbutton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\noiseDisable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\okButton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\okButtonOn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\cancelButton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\cancelButtonOn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\noiseEnable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\noiseTips.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\noiseTipsOn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\main_setting.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\min_button.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\close_button.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\vhall_logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\checkbox.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\radiobutton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\fontBold.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\fontColor.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\fontItalic.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\fontUnderline.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\vhallTitleLogo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\addCamera.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\hintBackground_green.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\hintBackground_red.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\hintBackground_yellow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\immUpdate.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\micEnhanceAble.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\micVolumeAble.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\micVolumeUnable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\speakerVolumeAble.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\speakerVolumeUnable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\delete_item.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\media_play_filelist.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\media_play_loop.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\media_play_pause.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\media_play_start.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\media_play_volume_off.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\media_play_volume_on.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolWidget\media_file_add.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\comboBox_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\comboBox_select.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\comboBox_normal_big.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\combobox_select_big.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\comboBox_arrow_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\combobox_arrow_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\pushbutton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\pushButton_disabled.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\pushbutton_small.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\pushbutton_small_disabled.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\sysButtonIcon_up.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\sysButtonIcon_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\apply.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\openCurDir.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\ChangeDir.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\settingBtn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\EnhanceSetting.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\deviceOption.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\volumnBackground.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\volumnHandle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\micEnhanceUnable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\sysButtonIcon_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\shared_button.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\widget_exit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\widget_exit_high.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\max_button.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\normal_button.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\refresh_button.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\sysButton\btn_close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mainMenu\aboutUS.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mainMenu\exit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mainMenu\QA.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mainMenu\setting.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mainMenu\usage.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mainMenu\triangle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\vlive.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\password.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\username.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_auto.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_auto_checked.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_auto_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_login.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_login_high.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_password.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_password_high.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_user.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_user_high.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_verify_code.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_verify_code_high.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_login_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_verify_code_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\loginDialog\login_background_shadow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolTip\noiseToolTips.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolTip\firstTip.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolTip\suspendTip.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolTip\versionBack.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolTip\splash.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolTip\update.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolTip\vhprocessbarback.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\toolTip\findNew.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\desktopSharing\checked.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\desktopSharing\checked_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\desktopSharing\unckeck.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\desktopSharing\unckeck_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\desktopSharing\redPoint.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\desktopSharing\background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\desktopSharing\cameraBackground.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\desktopSharing\tipbackground.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\desktopSharing\backgroundNoChat.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\windowSetting\flush.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\wdg\VhallLiveBG.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mediaReader\insertVideo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mediaReader\listloop.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mediaReader\sequentialplay.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mediaReader\singleloop.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mediaReader\addfiles.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mediaReader\beginplay.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mediaReader\stopplay.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\mediaReader\playlistbackground.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\MonitorAreaCapture\left_bottom.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\MonitorAreaCapture\left_bottom_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\MonitorAreaCapture\left_top.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\MonitorAreaCapture\left_top_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\MonitorAreaCapture\right_bottom.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\MonitorAreaCapture\right_bottom_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\MonitorAreaCapture\right_top.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\MonitorAreaCapture\right_top_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\MonitorAreaCapture\top.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\MonitorAreaCapture\top_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\shared\background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\shared\copy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\shared\copy_high.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\shared\input_background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\teaching\bg_left_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\teaching\bg_left_top.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\teaching\bg_left_top_large.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\teaching\bg_right_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\teaching\bg_right_top.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\teaching\btn_background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\teaching\btn_close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\teaching\btn_close_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\teaching\mainwindows_step2_res_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\teaching\mainwindows_step2_res_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\teaching\activity_list_res.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\res\title_shadow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\cb2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\reply_yes.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\reply_yes_unenable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\reply_yes_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\Experience.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\line.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\shareToolBtn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\stopShareBackGroud.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\startLive.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\to_speake_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\choiceActivity.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\enter_live.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\enter_live_unenable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\enter_live_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\interactivity.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\interactivity_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\JoinActivity.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\live.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\live_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\arraw_bottom.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\arraw_bottom_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\off_speake.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\off_speake_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\to_speake.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\to_speake_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\icon_camera.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\leave_speak.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\leave_speak_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\leave_speak_unenable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\icon_speaker.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\icon_disable_mic.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\icon_screen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\leave_live.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\leave_live_unenable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\leave_live_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\render_desktop.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\render_finished.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\render_master_exit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\render_wait.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\arraw_up.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\arraw_up_hovr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\ask_background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\reply_no.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\reply_no_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\ask_speak_menu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\close_camera_menu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\c1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\c2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\c3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\c4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\c5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\c6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\c7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\c8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\c9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\c10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\c11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\c12.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\cb.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\VLive\img\interactivity\deviceBack.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\VLive\img\qt_zh_CN.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="..\VLive\VLive.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Setting\NoiseTooltip.ui">
+      <Filter>UI\Setting</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
