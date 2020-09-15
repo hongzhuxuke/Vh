@@ -24,7 +24,7 @@ static wchar_t * char2wchar(const char* cchar)
 
 
 bool LibManager::InitDll() {
-	QString dir = QCoreApplication::applicationDirPath() + "/VhallWebRtcLive.dll";
+	QString dir = QCoreApplication::applicationDirPath() + "/WebRtcLive.dll";
 	if (!RegisterDll(char2wchar(dir.toStdString().c_str()))) {
 		return false;
 	}

@@ -13,7 +13,7 @@
 //#include <QGraphicsDropShadowEffect> 
 
 #include "../../Unility/ToolManager.h"
-#include "../../VhallClassSDK/URLGenerator.h"
+#include "../../ClassSDK/URLGenerator.h"
 #include "TipsWdg.h"
 //extern ToolManager *globalToolManager;
 

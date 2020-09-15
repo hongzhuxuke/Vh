@@ -120,7 +120,7 @@
     <ClCompile>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>QT_QML_DEBUG;UNICODE;_UNICODE;WIN32;WIN64;OPENSDK;VH_CLASS_APP;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_OPENGLEXTENSIONS_LIB;QT_SQL_LIB;QT_TESTLIB_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)VhallClassSDK;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\WebRTC\include\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\VhallWebRtcLive\Setting;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;$(SolutionDir)VhallClassSDK\VhallPaasSDK\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)ClassSDK;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\WebRTC\include\;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\WebRtcLive\Setting;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;$(SolutionDir)ClassSDK\PaasSDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -136,7 +136,7 @@
     <QtMoc>
       <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
       <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
-      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)VhallClassSDK;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\WebRTC\include\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\VhallWebRtcLive\Setting;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;$(SolutionDir)VhallClassSDK\VhallPaasSDK\;%(AdditionalIncludeDirectories)</IncludePath>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)ClassSDK;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\WebRTC\include\;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\WebRtcLive\Setting;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;$(SolutionDir)ClassSDK\PaasSDK;%(AdditionalIncludeDirectories)</IncludePath>
       <Define>QT_QML_DEBUG;UNICODE;_UNICODE;WIN32;WIN64;OPENSDK;VH_CLASS_APP;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_OPENGLEXTENSIONS_LIB;QT_SQL_LIB;QT_TESTLIB_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
     </QtMoc>
     <QtUic>
@@ -184,7 +184,7 @@
     <ClCompile>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;UNILITY_EXPORT;VH_CLASS_APP;OPENSDK;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_OPENGLEXTENSIONS_LIB;QT_SQL_LIB;QT_TESTLIB_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)VhallClassSDK;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\WebRTC\include\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\VhallWebRtcLive\Setting;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;$(SolutionDir)VhallClassSDK\VhallPaasSDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)ClassSDK;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\WebRTC\include\;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\WebRtcLive\Setting;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;$(SolutionDir)ClassSDK\PaasSDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -200,7 +200,7 @@
     <QtMoc>
       <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
       <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
-      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)VhallClassSDK;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\WebRTC\include\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\VhallWebRtcLive\Setting;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;$(SolutionDir)VhallClassSDK\VhallPaasSDK;%(AdditionalIncludeDirectories)</IncludePath>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(SolutionDir)Unility;$(SolutionDir)common;$(SolutionDir)common\baseclass;$(SolutionDir)common\def;..\common;$(SolutionDir)ClassSDK;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\WebRTC\include\;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\signalling\tool\;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\common\;$(SolutionDir)common\Tips;$(SolutionDir)\WebRtcLive\Setting;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json;$(SolutionDir)ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtOpenGLExtensions;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;$(SolutionDir)ClassSDK\PaasSDK;%(AdditionalIncludeDirectories)</IncludePath>
       <Define>UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;UNILITY_EXPORT;VH_CLASS_APP;OPENSDK;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_OPENGLEXTENSIONS_LIB;QT_SQL_LIB;QT_TESTLIB_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
     </QtMoc>
     <QtUic>
@@ -213,6 +213,9 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_reader.cpp" />
+    <ClCompile Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_value.cpp" />
+    <ClCompile Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_writer.cpp" />
     <ClCompile Include="..\common\baseclass\pathManage.cpp" />
     <ClCompile Include="..\common\baseclass\pathmanager.cpp" />
     <ClCompile Include="..\common\CLineEditInput.cpp" />
@@ -224,9 +227,6 @@
     <ClCompile Include="..\common\ToolButton.cpp" />
     <ClCompile Include="..\common\UACUtility.cpp" />
     <ClCompile Include="..\common\UpLoader.cpp" />
-    <ClCompile Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_reader.cpp" />
-    <ClCompile Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_value.cpp" />
-    <ClCompile Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_writer.cpp" />
     <ClCompile Include="AMDAdapterCheck.cpp" />
     <ClCompile Include="CWidget.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_TipsWdg.cpp">
@@ -281,6 +281,15 @@
     <QtMoc Include="..\common\push_button.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\autolink.h" />
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\config.h" />
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\features.h" />
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\forwards.h" />
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json.h" />
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_batchallocator.h" />
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\reader.h" />
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\value.h" />
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\writer.h" />
     <ClInclude Include="..\common\baseclass\pathManage.h" />
     <ClInclude Include="..\common\baseclass\pathmanager.h" />
     <QtMoc Include="..\common\CLineEditInput.h" />
@@ -312,15 +321,6 @@
     <QtMoc Include="AMDAdapterCheck.h" />
     <QtMoc Include="..\common\UpLoader.h" />
     <QtMoc Include="CWidget.h" />
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\autolink.h" />
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\config.h" />
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\features.h" />
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\forwards.h" />
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json.h" />
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_batchallocator.h" />
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\reader.h" />
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\value.h" />
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\writer.h" />
     <ClInclude Include="GeneratedFiles\ui_TipsWdg.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
@@ -332,12 +332,12 @@
     <Image Include="vlive.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\CMakeLists.txt" />
+    <Text Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_internalarray.inl" />
-    <None Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_internalmap.inl" />
-    <None Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_valueiterator.inl" />
+    <None Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_internalarray.inl" />
+    <None Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_internalmap.inl" />
+    <None Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_valueiterator.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

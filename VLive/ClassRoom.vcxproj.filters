@@ -108,13 +108,13 @@
     <ClCompile Include="GeneratedFiles\Release\moc_TipsWdg.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_reader.cpp">
+    <ClCompile Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_reader.cpp">
       <Filter>lib_json</Filter>
     </ClCompile>
-    <ClCompile Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_value.cpp">
+    <ClCompile Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_value.cpp">
       <Filter>lib_json</Filter>
     </ClCompile>
-    <ClCompile Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_writer.cpp">
+    <ClCompile Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_writer.cpp">
       <Filter>lib_json</Filter>
     </ClCompile>
   </ItemGroup>
@@ -197,31 +197,31 @@
     <ClInclude Include="GeneratedFiles\ui_TipsWdg.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\autolink.h">
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\autolink.h">
       <Filter>lib_json</Filter>
     </ClInclude>
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\config.h">
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\config.h">
       <Filter>lib_json</Filter>
     </ClInclude>
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\features.h">
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\features.h">
       <Filter>lib_json</Filter>
     </ClInclude>
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\forwards.h">
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\forwards.h">
       <Filter>lib_json</Filter>
     </ClInclude>
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json.h">
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json.h">
       <Filter>lib_json</Filter>
     </ClInclude>
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_batchallocator.h">
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_batchallocator.h">
       <Filter>lib_json</Filter>
     </ClInclude>
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\reader.h">
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\reader.h">
       <Filter>lib_json</Filter>
     </ClInclude>
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\value.h">
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\value.h">
       <Filter>lib_json</Filter>
     </ClInclude>
-    <ClInclude Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\writer.h">
+    <ClInclude Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\writer.h">
       <Filter>lib_json</Filter>
     </ClInclude>
   </ItemGroup>
@@ -242,18 +242,18 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\CMakeLists.txt">
+    <Text Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\CMakeLists.txt">
       <Filter>lib_json</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_internalarray.inl">
+    <None Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_internalarray.inl">
       <Filter>lib_json</Filter>
     </None>
-    <None Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_internalmap.inl">
+    <None Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_internalmap.inl">
       <Filter>lib_json</Filter>
     </None>
-    <None Include="..\VhallClassSDK\VhallPaasSDK\VhallWebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_valueiterator.inl">
+    <None Include="..\ClassSDK\PaasSDK\WebRtcSDK\Interactive_live_SDK_win\vhall_webrtc_sdk\3rdparty\vhall_live_core\vhall_media_core\3rdparty\json\json_valueiterator.inl">
       <Filter>lib_json</Filter>
     </None>
   </ItemGroup>
