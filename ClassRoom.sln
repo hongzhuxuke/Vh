@@ -33,13 +33,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vhall_webrtc_sdk", "ClassSD
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClassSDK", "ClassSDK\ClassSDK.vcxproj", "{59CD1C33-1B11-4586-84EF-E1B3A95BA10B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F69FE6F-5E33-4584-ADEE-57B47F55623B}"
-	ProjectSection(SolutionItems) = preProject
-		VLive\ClassRoom.vcxproj = VLive\ClassRoom.vcxproj
-		VLive\VhallClassRoom.vcxproj = VLive\VhallClassRoom.vcxproj
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VhallClassRoom", "VLive\ClassRoom.vcxproj", "{B814121D-2EEF-4531-9E21-5294CB21EBE4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClassRoom", "VLive\ClassRoom.vcxproj", "{B814121D-2EEF-4531-9E21-5294CB21EBE4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VhallWebRtcSDK", "ClassSDK\PaasSDK\WebRtcSDK\VhallWebRtcSDK.vcxproj", "{0B22995B-9C3A-40EB-81E1-60514923EBAE}"
 EndProject

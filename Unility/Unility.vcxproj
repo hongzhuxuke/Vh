@@ -137,7 +137,7 @@
       <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
     </QtMoc>
     <Lib>
-      <AdditionalDependencies>Ws2_32.lib;Wldap32.lib;winmm.lib;Crypt32.lib;Normaliz.lib;User32.lib;Shlwapi.lib;VHClassSDK.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Ws2_32.lib;Wldap32.lib;winmm.lib;Crypt32.lib;Normaliz.lib;User32.lib;Shlwapi.lib;ClassSDK.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)VhallClassSDK\packet;$(SolutionDir)$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
@@ -193,7 +193,7 @@
       <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
     </QtMoc>
     <Lib>
-      <AdditionalDependencies>Ws2_32.lib;Wldap32.lib;winmm.lib;Crypt32.lib;Normaliz.lib;VHClassSDK.lib;User32.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Ws2_32.lib;Wldap32.lib;winmm.lib;Crypt32.lib;Normaliz.lib;ClassSDK.lib;User32.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)VhallClassSDK\packet;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
