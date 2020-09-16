@@ -1640,12 +1640,13 @@ void WebRtcLiveWdg::customEvent(QEvent* event) {
 
             if (msgEvent->mbState) {
                mMultiClassFloatWnd->setFixedSize(QSize(720, 570));
+               mMultiClassFloatWnd->setStaysOnTop(false);
                mTeacherRender->setFixedSize(QSize(720, 540));
                mTeacherRender->setOperationPower(true);
             }
             else {
                mMultiClassFloatWnd->setFixedSize(QSize(320, 240));
-               
+               mMultiClassFloatWnd->setStaysOnTop(true);
                mTeacherRender->setFixedSize(QSize(320, 240));
                mTeacherRender->setOperationPower(false);
             }
@@ -1714,11 +1715,13 @@ void WebRtcLiveWdg::customEvent(QEvent* event) {
                   mFloatWnd->AddRenderWidget(Render, false);
                   if (msgEvent->mbState) {
                      mFloatWnd->setFixedSize(QSize(720, 570));
+                     mFloatWnd->setStaysOnTop(false);
                      Render->setFixedSize(QSize(720, 540));
                      Render->setOperationPower(true);
                   }
                   else {
                      mFloatWnd->setFixedSize(QSize(320, 240));
+                     mFloatWnd->setStaysOnTop(true);
                      Render->setFixedSize(QSize(320, 240));
                      Render->setOperationPower(false);
                   }

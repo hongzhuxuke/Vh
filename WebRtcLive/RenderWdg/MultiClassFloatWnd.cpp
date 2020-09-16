@@ -36,6 +36,19 @@ MultiClassFloatWnd::~MultiClassFloatWnd()
 {
 }
 
+void MultiClassFloatWnd::setStaysOnTop(bool bTop)
+{
+   if (bTop) {
+      this->setWindowFlags(Qt::FramelessWindowHint | Qt::WindowMinimizeButtonHint | Qt::WindowStaysOnTopHint);
+      
+   }
+   else {
+      this->setWindowFlags(Qt::FramelessWindowHint | Qt::WindowMinimizeButtonHint);
+      
+   }
+}
+
+
 void MultiClassFloatWnd::AddRenderWidget(QWidget* widget,bool isFull) {
    mbIsFullType = isFull;
    if (mbIsFullType) {

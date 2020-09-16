@@ -19,6 +19,7 @@ public:
    void AddRenderWidget(QWidget* widget, bool isFull);
    QWidget* RenderWidget(bool bRemove = true);
    void RemoveRenderWidget(QWidget* widget);
+   void setStaysOnTop(bool bTop);
 
    bool IsFullType();
    void SetUserid(QString id);
